@@ -8,8 +8,15 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   margin: 0;
-  padding:0;
 }
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.pd-y {
+  padding: 104px 0 !important;
+}
+.pd-y-s {
+  padding: 70px 0 !important;
 }
