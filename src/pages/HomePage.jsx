@@ -1,9 +1,12 @@
-const Home = () => {
+import { Hero, Services } from "../components";
+
+const HomePage = () => {
   return (
-    <div className="w-[100dvw] min-h-[100dvh] pd-y bg-neutral-100">
-      <h1 className="text-center">home page</h1>
-    </div>
+    <section id="home">
+      <Hero />
+      <Services />
+    </section>
   );
 };
 
-export default Home;
+export default HomePage;

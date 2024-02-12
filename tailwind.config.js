@@ -5,11 +5,18 @@ export default {
   theme: {
     container: {
       center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "0.2rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
     },
     extend: {
       colors: {
         primary: "#0d6efd",
-        redColor: "#c70000",
+        "coral-red": "#c70000",
       },
     },
   },

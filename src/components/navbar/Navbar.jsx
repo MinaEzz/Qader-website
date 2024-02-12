@@ -1,23 +1,20 @@
-import { FiAlignJustify } from "react-icons/fi";
-import { IoSunnyOutline, IoMoonOutline, IoClose } from "react-icons/io5";
-import { FaUserCircle } from "react-icons/fa";
-import { MdOutlineShoppingCart } from "react-icons/md";
+import { useState } from "react";
 import Searchbar from "../Searchbar";
 import MobileNavbar from "./MobileNavbar";
 import NavigationLink from "./NavigationLink";
-import { Link } from "react-router-dom";
-import { NavbarLinks } from "../../constants/NavbarLinks";
-import { useState } from "react";
+import { NAVLINKS } from "../../constants";
+import { FiAlignJustify } from "react-icons/fi";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-  // dark mode w an2l el navbar bta3 el aghza elso8yra fe component lw7do
+
   return (
-    <header className="fixed w-[100dvw] min-h-[72px] py-4 flex justify-center items-center bg-primary shadow-xl max-lg:px-8 max-lg:flex-col">
-      <div className="container flex justify-between items-center flex-wrap">
+    <nav className="bg-white min-h-[70px] py-2 flex items-center justify-center max-lg:flex-col transition-all ease-in-out duration-500 sticky top-0 z-40">
+      <div className="container flex justify-between items-center gap-2">
         <div className=" flex-initial">
           <img src="" alt="Qader Website" />
         </div>
@@ -29,64 +26,32 @@ const Navbar = () => {
             <IoClose
               title="Close Navigation Menu Icon"
               fontSize={32}
-              color="white"
+              className="text-primary"
             />
           ) : (
             <FiAlignJustify
               title="Navigation Menu Icon"
               fontSize={32}
-              color="white"
+              className="text-primary"
             />
           )}
         </button>
-        <div className="flex flex-1 items-center max-lg:hidden">
+        <div className="flex flex-1 items-center gap-2 max-lg:hidden">
           <Searchbar />
-          <nav className="flex-1 px-3">
-            <ul className="flex items-center gap-4">
-              {NavbarLinks.map((link) => {
-                return (
-                  <li key={link.title}>
-                    <NavigationLink path={link.path} title={link.title} />
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-          <div className="bg-neutral-00 flex flex-initial gap-3">
-            <div className="rounded-full text-center h-fit">
-              <Link to="/profile">
-                {/* <img
-                  className="rounded-full "
-                  src=""
-                  alt="Avatar"
-                  sizes={32}
-                  width={34}
-                  height={34}
-                /> */}
-                <FaUserCircle fontSize={30} className="text-white" />
-              </Link>
-            </div>
-            <div className="relative rounded-full text-center h-fit">
-              <Link to="/checkout">
-                <MdOutlineShoppingCart
-                  fontSize={30}
-                  title="Checkout"
-                  color="white"
-                />
-                <div className="absolute top-1/2 -translate-y-full -right-2 text-center bg-redColor rounded-full w-6 h-6">
-                  <span className="text-sm font-thick text-white">0</span>
-                </div>
-              </Link>
-            </div>
-            <button>
-              <IoMoonOutline fontSize={18} color="white" />
-            </button>
-          </div>
+          <ul className="flex items-center gap-4">
+            {NAVLINKS.map((link) => {
+              return (
+                <li key={link.title}>
+                  <NavigationLink path={link.path} title={link.title} />
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
 
-      {isOpen && <MobileNavbar isOpen={isOpen} />}
-    </header>
+      <MobileNavbar isOpen={isOpen} />
+    </nav>
   );
 };
 

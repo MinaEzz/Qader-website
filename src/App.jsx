@@ -1,16 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Footer, Navbar } from "./components";
-import { HomePage } from "./pages";
+import { Header, Footer, Navbar } from "./components";
+import { HomePage, AboutPage } from "./pages";
 
 const App = () => {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <main className="bg-neutral-100 relative">
+      <Router>
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </main>
   );
 };
 
