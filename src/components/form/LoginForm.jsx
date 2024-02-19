@@ -1,5 +1,6 @@
 import { FaUser, FaLock } from "react-icons/fa";
 import { LuLogIn } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   const handleSubmit = (e) => {
@@ -36,6 +37,12 @@ const LoginForm = () => {
           className="w-full h-10 outline-none text-base font-bold text-neutral-600 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-bold"
         />
       </div>
+      <Link
+        to="/forget-password"
+        className="text-slate-700 capitalize font-medium text-lg"
+      >
+        forget password?
+      </Link>
       <button
         type="submit"
         className="w-full h-14 flex items-center justify-center gap-1 rounded-xl bg-primary text-2xl capitalize font-bold text-white"
