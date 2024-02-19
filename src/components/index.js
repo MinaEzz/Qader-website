@@ -4,7 +4,7 @@ import MobileNavbar from "./navbar/MobileNavbar";
 import NavigationLink from "./navbar/NavigationLink";
 import Searchbar from "./Searchbar";
 import Hero from "./home/Hero";
-import LandingButton from "./LandingButton";
+import Button from "./shared/Button";
 import Services from "./home/Services";
 import ServiceCard from "./home/ServiceCard";
 import OurTitle from "./shared/OurTitle";
@@ -14,6 +14,8 @@ import ProductSlider from "./home/ProductSlider";
 import SliderCard from "./home/SliderCard";
 import AboutContent from "./about/AboutContent";
 import Footer from "./shared/Footer";
+import LoginForm from "./form/LoginForm";
+import RegistForm from "./form/RegistForm";
 export {
   Header,
   Navbar,
@@ -21,7 +23,7 @@ export {
   NavigationLink,
   Searchbar,
   Hero,
-  LandingButton,
+  Button,
   Services,
   ServiceCard,
   OurTitle,
@@ -31,4 +33,6 @@ export {
   SliderCard,
   AboutContent,
   Footer,
+  LoginForm,
+  RegistForm,
 };

@@ -1,0 +1,29 @@
+import { formVector } from "../assets/images";
+import { RegistForm } from "../components";
+import { Button } from "../components";
+import { useEffect } from "react";
+
+const RegisterationPage = () => {
+  useEffect(() => {
+    document.title = "Sign Up";
+  }, []);
+  return (
+    <section className="min-h-[100dvh] pd-y bg-white">
+      <div className="container flex justify-between items-center gap-5 max-lg:flex-col-reverse">
+        <div className="w-full lg:flex-1 h-[500px] bg-red-">
+          <img src={formVector} alt="Login Vector" />
+        </div>
+        <div className="flex flex-col gap-8 flex-1 w-full">
+          <h2 className="text-4xl font-bold uppercase text-primary">sign up</h2>
+          <RegistForm />
+          <p className="text-slate-700 text-xl text-center capitalize">
+            already have an account?
+          </p>
+          <Button label="login" url="/login" backgroundColor="bg-slate-700" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default RegisterationPage;

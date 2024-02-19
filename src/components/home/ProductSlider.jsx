@@ -7,7 +7,7 @@ const ProductSlider = ({ title, products }) => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 4,
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -24,7 +24,7 @@ const ProductSlider = ({ title, products }) => {
   };
 
   return (
-    <section className="w-full px-8 py-4 bg-white rounded-lg flex flex-col">
+    <section className="w-full px-8 py-4 bg-white rounded-xl flex flex-col">
       <h3 className="text-xl font-medium  text-primary capitalize max-lg:text-center">
         {title}
       </h3>

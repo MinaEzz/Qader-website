@@ -5,7 +5,7 @@ import NavigationLink from "./NavigationLink";
 import { NAVLINKS } from "../../constants";
 import { FiAlignJustify } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
-import logo from "../../assets/logo/logoBlue.png";
+import logo from "../../assets/images/logo/logoBlue.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -15,9 +15,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white min-h-[70px] py-2 flex items-center justify-center max-lg:flex-col transition-all ease-in-out duration-500 sticky top-0 z-40 shadow-md">
+    <nav className="bg-white min-h-[70px] py-3 flex items-center justify-center max-lg:flex-col transition-all ease-in-out duration-500 sticky top-0 z-40 shadow-md">
       <div className="container flex justify-between items-center gap-4">
-        <Link to="/" className="w-[70px] h-[70px]">
+        <Link to="/" className="w-[80px] h-[75px]">
           <img src={logo} alt="Qader Website" draggable={false} />
         </Link>
         <button

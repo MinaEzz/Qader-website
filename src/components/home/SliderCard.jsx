@@ -20,9 +20,9 @@ const SliderCard = ({ productImg, productName, productPrice, productURL }) => {
         </div>
         <Link
           to={productURL}
-          className="text-sm bg-primary text-white capitalize py-1 px-2 rounded-lg"
+          className="text-sm bg-primary text-white capitalize py-1 px-2 rounded-3xl"
         >
-          view details
+          shop now
         </Link>
       </div>
     </div>

@@ -1,6 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header, Footer, Navbar } from "./components";
-import { HomePage, ProductsPage, AboutPage } from "./pages";
+import {
+  HomePage,
+  ProductsPage,
+  AboutPage,
+  LoginPage,
+  RegisterationPage,
+} from "./pages";
 
 const App = () => {
   return (
@@ -15,6 +21,8 @@ const App = () => {
             element={<ProductsPage />}
           />
           <Route path="/about-us" element={<AboutPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/regist" element={<RegisterationPage />} />
         </Routes>
         <Footer />
       </Router>

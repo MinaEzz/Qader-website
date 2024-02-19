@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="py-1.5 bg-primary">
       <div className="container grid grid-cols-2 ">
-        <p className="text-white text-base capitalize flex items-center">
+        <p className="text-white text-base uppercase flex items-center">
           welcome to qader
         </p>
         <div className=" flex items-center justify-end gap-3">

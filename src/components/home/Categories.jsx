@@ -14,11 +14,11 @@ const Categories = () => {
         {CATEGORIES.map((category) => {
           return (
             <li
-              className="flex items-center flex-1 text-xl font-medium capitalize text-slate-700 py-2 max-lg:text-center hover:text-primary transition-all ease-in-out duration-500 last:rounded-br-3xl"
+              className="flex items-center flex-1 text-xl font-medium capitalize text-slate-700 py-2 max-lg:text-center hover:text-primary transition-all ease-in-out duration-500"
               key={category.title}
             >
               <Link
-                className="w-full px-4"
+                className="w-full px-4 text-center"
                 to={`/products${category.url}/${category.title}`}
               >
                 {category.title}

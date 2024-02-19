@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { backgroundSlides } from "../../assets/images/background";
-import LandingButton from "../LandingButton";
+import Button from "../shared/Button";
 import { FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
@@ -33,7 +33,12 @@ const Hero = () => {
           building
           <span className="text-primary text-5xl"> accessibility</span>
         </p>
-        <LandingButton label="shop now" icon={<FaArrowRight size={18} />} />
+        <Button
+          label="shop now"
+          icon={<FaArrowRight size={18} />}
+          url="#shop-now"
+          width="w-48"
+        />
       </div>
     </section>
   );
