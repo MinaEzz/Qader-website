@@ -1,12 +1,10 @@
 import { FaUser, FaLock } from "react-icons/fa";
 import { LuLogIn } from "react-icons/lu";
-import { Link } from "react-router-dom";
 
-const LoginForm = () => {
+const LoginForm = ({ setOpenModal }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-
   return (
     <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
       <div className="relative border border-primary rounded-xl">
@@ -37,12 +35,12 @@ const LoginForm = () => {
           className="w-full h-10 outline-none text-base font-bold text-neutral-600 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-bold"
         />
       </div>
-      <Link
-        to="/forget-password"
-        className="text-slate-700 capitalize font-medium text-lg"
+      <strong
+        className="text-slate-700 capitalize font-medium text-lg cursor-pointer w-fit"
+        onClick={() => setOpenModal(true)}
       >
         forget password?
-      </Link>
+      </strong>
       <button
         type="submit"
         className="w-full h-14 flex items-center justify-center gap-1 rounded-xl bg-primary text-2xl capitalize font-bold text-white"
