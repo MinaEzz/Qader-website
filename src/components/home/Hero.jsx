@@ -25,13 +25,13 @@ const Hero = () => {
       style={backGround}
     >
       <div className="layer flex flex-col text-center justify-center items-center gap-4">
-        <h1 className="text-primary text-8xl font-extrabold tracking-wider uppercase">
+        <h1 className="text-primary-600 text-8xl font-extrabold tracking-wider uppercase">
           Qader
         </h1>
         <p className=" text-white text-4xl font-bold capitalize">
           breaking <span className="text-coral-red text-5xl">boundaries</span>,
           building
-          <span className="text-primary text-5xl"> accessibility</span>
+          <span className="text-primary-600 text-5xl"> accessibility</span>
         </p>
         <Button
           label="shop now"

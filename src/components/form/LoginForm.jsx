@@ -7,7 +7,7 @@ const LoginForm = ({ setOpenModal }) => {
   };
   return (
     <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-      <div className="relative border border-primary rounded-xl">
+      <div className="relative border border-primary-600 rounded-xl">
         <FaUser
           className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-600"
           fontSize={18}
@@ -21,7 +21,7 @@ const LoginForm = ({ setOpenModal }) => {
           className="w-full h-10 outline-none text-base font-bold text-neutral-600 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-bold"
         />
       </div>
-      <div className="relative border border-primary rounded-xl">
+      <div className="relative border border-primary-600 rounded-xl">
         <FaLock
           className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-600"
           fontSize={18}
@@ -43,7 +43,7 @@ const LoginForm = ({ setOpenModal }) => {
       </strong>
       <button
         type="submit"
-        className="w-full h-14 flex items-center justify-center gap-1 rounded-xl bg-primary text-2xl capitalize font-bold text-white"
+        className="w-full h-14 flex items-center justify-center gap-1 rounded-xl bg-primary-600 hover:bg-primary-700 active:bg-primary-800 transition-all text-2xl capitalize font-bold text-white"
       >
         login <LuLogIn fontSize={28} color="white" />
       </button>

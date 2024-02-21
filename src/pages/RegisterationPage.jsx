@@ -19,7 +19,13 @@ const RegisterationPage = () => {
           <p className="text-slate-700 text-xl text-center capitalize">
             already have an account?
           </p>
-          <Button label="login" url="/login" backgroundColor="bg-slate-700" />
+          <Button
+            label="login"
+            url="/login"
+            backgroundColor="bg-slate-700"
+            hoverBgColor="hover:bg-slate-800"
+            activeBgColor="active:bg-slate-900"
+          />
         </div>
       </div>
     </section>

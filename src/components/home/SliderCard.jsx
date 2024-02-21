@@ -16,11 +16,11 @@ const SliderCard = ({ productImg, productName, productPrice, productURL }) => {
           <h3 className="text-sm capitalize font-bold text-slate-700">
             {productName.slice(0, 28)}
           </h3>
-          <p className=" text-xs font-bold text-primary">${productPrice}</p>
+          <p className=" text-xs font-bold text-primary-600">${productPrice}</p>
         </div>
         <Link
           to={productURL}
-          className="text-sm bg-primary text-white capitalize py-1 px-2 rounded-3xl"
+          className="text-sm bg-primary-600 hover:bg-primary-700 active:bg-primary-800 transition-all text-white capitalize py-1 px-2 rounded-3xl"
         >
           shop now
         </Link>

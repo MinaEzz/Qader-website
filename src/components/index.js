@@ -16,7 +16,8 @@ import AboutContent from "./about/AboutContent";
 import Footer from "./shared/Footer";
 import LoginForm from "./form/LoginForm";
 import RegistForm from "./form/RegistForm";
-import ForgetPasswordModal from "./form/forgetPasswordModal";
+import ForgetPasswordModal from "./form/ForgetPasswordModal";
+import ProductCard from "./products/ProductCard";
 export {
   Header,
   Navbar,
@@ -37,4 +38,5 @@ export {
   LoginForm,
   RegistForm,
   ForgetPasswordModal,
+  ProductCard,
 };

@@ -25,7 +25,7 @@ const ProductSlider = ({ title, products }) => {
 
   return (
     <section className="w-full px-8 py-4 bg-white rounded-xl flex flex-col">
-      <h3 className="text-xl font-medium  text-primary capitalize max-lg:text-center">
+      <h3 className="text-xl font-medium  text-primary-600 capitalize max-lg:text-center">
         {title}
       </h3>
       <div className="mt-4">

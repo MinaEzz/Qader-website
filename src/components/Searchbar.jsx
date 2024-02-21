@@ -63,7 +63,7 @@ const Searchbar = () => {
   };
 
   return (
-    <div className="relative flex items-center flex-1 border border-primary rounded-3xl">
+    <div className="relative flex items-center flex-1 border border-primary-600 rounded-3xl">
       <IoSearchOutline
         className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-600"
         fontSize={18}

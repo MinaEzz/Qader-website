@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Categories = () => {
   return (
     <aside className="bg-white w-1/5 max-lg:w-full h-fit lg:rounded-xl py-4 shadow-md">
-      <h3 className="text-center text-primary capitalize text-3xl font-medium">
+      <h3 className="text-center text-primary-600 capitalize text-3xl font-medium">
         categories
       </h3>
       <div className="relative w-[40%] max-lg:w-[20%] h-[2px] bg-slate-700 mx-auto mt-4 flex justify-center items-center">
@@ -14,7 +14,7 @@ const Categories = () => {
         {CATEGORIES.map((category) => {
           return (
             <li
-              className="flex items-center flex-1 text-xl font-medium capitalize text-slate-700 py-2 max-lg:text-center hover:text-primary transition-all ease-in-out duration-500"
+              className="flex items-center flex-1 text-xl font-medium capitalize text-slate-700 py-2 max-lg:text-center hover:text-primary-600 transition-all ease-in-out duration-500"
               key={category.title}
             >
               <Link

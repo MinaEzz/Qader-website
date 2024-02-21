@@ -15,7 +15,13 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#0d6efd",
+        "primary-300": "#89cfff",
+        "primary-400": "#52b4ff",
+        "primary-500": "#2a91ff",
+        "primary-600": "#0d6efd",
+        "primary-700": "#0c5ae9",
+        "primary-800": "#1149bc",
+        "primary-900": "#144194",
         "coral-red": "#c70000",
       },
     },

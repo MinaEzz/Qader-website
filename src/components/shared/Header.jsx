@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-1.5 bg-primary">
+    <header className="py-1.5 bg-primary-600">
       <div className="container grid grid-cols-2 ">
         <p className="text-white text-base uppercase flex items-center">
           welcome to qader
@@ -28,7 +28,11 @@ const Header = () => {
                   width={34}
                   height={34}
                 /> */}
-              <FaUser fontSize={20} title="Avatar" className="text-primary" />
+              <FaUser
+                fontSize={20}
+                title="Avatar"
+                className="text-primary-600"
+              />
             </Link>
           </div>
           <div className="relative rounded-full text-center h-fit bg-neutral-100 p-2">
@@ -36,7 +40,7 @@ const Header = () => {
               <MdShoppingCart
                 fontSize={20}
                 title="Checkout"
-                className="text-primary"
+                className="text-primary-600"
               />
               <div className="absolute top-1/2 -translate-y-full -right-2 text-center bg-neutral-100 rounded-full w-6 h-6">
                 <span className="text-sm font-bold text-slate-600">0</span>
@@ -50,13 +54,13 @@ const Header = () => {
             {isDark ? (
               <IoSunnyOutline
                 fontSize={20}
-                className="text-primary"
+                className="text-primary-600"
                 title="Light mode"
               />
             ) : (
               <IoMoonOutline
                 fontSize={20}
-                className="text-primary"
+                className="text-primary-600"
                 title="Dark mode"
               />
             )}

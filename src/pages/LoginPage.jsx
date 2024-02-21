@@ -26,6 +26,8 @@ const LoginPage = () => {
             label="sign up"
             url="/regist"
             backgroundColor="bg-slate-700"
+            hoverBgColor="hover:bg-slate-800"
+            activeBgColor="active:bg-slate-900"
           />
         </div>
       </div>

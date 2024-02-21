@@ -28,13 +28,13 @@ const Navbar = () => {
             <IoClose
               title="Close Navigation Menu Icon"
               fontSize={36}
-              className="text-primary"
+              className="text-primary-600"
             />
           ) : (
             <FiAlignJustify
               title="Navigation Menu Icon"
               fontSize={36}
-              className="text-primary"
+              className="text-primary-600"
             />
           )}
         </button>

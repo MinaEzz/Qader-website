@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "id": 1001,
+      "name": "product name",
+      "description": "product description",
+      "price": "299",
+      "image": "../assets/images/products/01061.jpg"
+    },
+    {
+      "id": 1002,
+      "name": "product name",
+      "description": "product description",
+      "price": "299",
+      "image": "../assets/images/products/150185.jpg"
+    },
+    {
+      "id": 1003,
+      "name": "product name",
+      "description": "product description",
+      "price": "299",
+      "image": "image url"
+    },
+    {
+      "id": 1004,
+      "name": "product name",
+      "description": "product description",
+      "price": "299",
+      "image": "image url"
+    },
+    {
+      "id": 1005,
+      "name": "product name",
+      "description": "product description",
+      "price": "299",
+      "image": "image url"
+    },
+
+    {
+      "id": 2001,
+      "name": "product name",
+      "description": "product description",
+      "price": "299",
+      "image": "image url"
+    },
+    {
+      "id": 2002,
+      "name": "product name",
+      "description": "product description",
+      "price": "299",
+      "image": "image url"
+    },
+    {
+      "id": 2003,
+      "name": "product name",
+      "description": "product description",
+      "price": "299",
+      "image": "image url"
+    },
+    {
+      "id": 2004,
+      "name": "product name",
+      "description": "product description",
+      "price": "299",
+      "image": "image url"
+    },
+    {
+      "id": 2005,
+      "name": "product name",
+      "description": "product description",
+      "price": "299",
+      "image": "image url"
+    }
+  ]
+}

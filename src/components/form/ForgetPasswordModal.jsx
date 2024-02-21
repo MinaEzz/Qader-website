@@ -1,8 +1,13 @@
 import { IoClose } from "react-icons/io5";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ForgetPasswordModal = ({ open, close }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
+    toast.success("Your message has been successfully sent", {
+      theme: "colored",
+    });
   };
 
   if (!open) return null;
@@ -26,11 +31,11 @@ const ForgetPasswordModal = ({ open, close }) => {
                 name="email"
                 placeholder="Enter Your Email"
                 required
-                className="w-full flex-1 h-10 outline-none text-sm text-neutral-600 font-bold placeholder:text-neutral-500 p-2 placeholder:text-sm placeholder:font-bold border border-primary rounded-xl"
+                className="w-full flex-1 h-10 outline-none text-sm text-neutral-600 font-bold placeholder:text-neutral-500 p-2 placeholder:text-sm placeholder:font-bold border border-primary-600 rounded-xl"
               />
               <button
                 type="submit"
-                className="w-[70px] h-10 rounded-xl bg-primary text-base capitalize font-bold text-white"
+                className="w-[70px] h-10 rounded-xl bg-primary-600 hover:bg-primary-700 active:bg-primary-800 text-base capitalize font-bold text-white"
               >
                 submit
               </button>
@@ -42,6 +47,7 @@ const ForgetPasswordModal = ({ open, close }) => {
           </form>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };

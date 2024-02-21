@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-primary pd-y-s">
+    <footer className="w-full bg-primary-600 pd-y-s">
       <div className="container flex gap-12 items-start justify-between max-lg:flex-col">
         <section className=" flex flex-1 w-full flex-col gap-8">
           <Link to="/" className="w-[80px] h-[90px] ">
