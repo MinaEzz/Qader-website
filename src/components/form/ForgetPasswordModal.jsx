@@ -15,7 +15,7 @@ const ForgetPasswordModal = ({ open, close }) => {
     <section className="w-full h-full" onClick={close}>
       <div className="layer flex justify-center items-center z-40">
         <div
-          className="bg-white h-[250px] flex flex-col p-2"
+          className="bg-white lg:w-1/2 w-full h-[250px] flex flex-col p-2 fixed top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2"
           onClick={(e) => e.stopPropagation()}
         >
           <button className="w-fit h-fit ml-auto" onClick={close}>
