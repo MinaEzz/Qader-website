@@ -9,14 +9,24 @@ const ProductsPage = () => {
   console.log(productData);
   const params = useParams();
   useEffect(() => {
-    document.title = `products of ${params.categoryTITLE}`;
+    document.title = `${
+      params.categoryTITLE === "all"
+        ? "Our Products"
+        : `Products Of ${params.categoryTITLE}`
+    }`;
   }, [params.categoryTITLE]);
 
   return (
     <section className="min-h-[100dvh] pd-y">
-      <OurTitle title={`${params.categoryTITLE} products`} />
-      <div className="container mt-8">
-        <ul className="flex gap-5 flex-wrap items-center justify-between">
+      <OurTitle
+        title={`${
+          params.categoryTITLE !== "all"
+            ? `${params.categoryTITLE} products`
+            : "products"
+        }`}
+      />
+      <div className="container ">
+        <ul className=" pd-y-s flex gap-8 flex-wrap items-center justify-around">
           {productData.map((product) => {
             return <ProductCard key={product.id} {...product} />;
           })}

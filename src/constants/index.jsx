@@ -186,27 +186,27 @@ import {
 } from "react-icons/fa6";
 export const SOCIALMEDIA = [
   {
-    icon: <FaFacebook size={20} className="text-primary" />,
+    icon: <FaFacebook size={20} className="text-primary-600" />,
     title: "facebook",
     ref: "",
   },
   {
-    icon: <FaTwitter size={20} className="text-primary" />,
+    icon: <FaTwitter size={20} className="text-primary-600" />,
     title: "twitter",
     ref: "",
   },
   {
-    icon: <FaInstagram size={20} className="text-primary" />,
+    icon: <FaInstagram size={20} className="text-primary-600" />,
     title: "instagram",
     ref: "",
   },
   {
-    icon: <FaLinkedin size={20} className="text-primary" />,
+    icon: <FaLinkedin size={20} className="text-primary-600" />,
     title: "linkedin",
     ref: "",
   },
   {
-    icon: <FaEnvelope size={20} className="text-primary" />,
+    icon: <FaEnvelope size={20} className="text-primary-600" />,
     title: "email",
     ref: "mailto:qader2024bis@gmail.com",
   },

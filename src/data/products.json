@@ -3,73 +3,78 @@
     {
       "id": 1001,
       "name": "product name",
-      "description": "product description",
-      "price": "299",
-      "image": "../assets/images/products/01061.jpg"
+      "description": " aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
+      "price": "219",
+      "image": "https://www12.0zz0.com/2024/02/21/17/204890346.jpg",
+      "available": true
     },
     {
       "id": 1002,
       "name": "product name",
-      "description": "product description",
-      "price": "299",
-      "image": "../assets/images/products/150185.jpg"
+      "description": " aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
+      "price": "29",
+      "image": "https://www10.0zz0.com/2024/02/21/16/256196285.jpg",
+      "available": false
     },
     {
       "id": 1003,
       "name": "product name",
-      "description": "product description",
-      "price": "299",
-      "image": "image url"
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
+      "price": "249",
+      "image": "https://www10.0zz0.com/2024/02/21/16/713820805.jpg",
+      "available": false
     },
     {
       "id": 1004,
       "name": "product name",
-      "description": "product description",
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
       "price": "299",
-      "image": "image url"
+      "image": "https://www10.0zz0.com/2024/02/21/16/484845597.jpg",
+      "available": true
     },
     {
       "id": 1005,
       "name": "product name",
-      "description": "product description",
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
       "price": "299",
-      "image": "image url"
+      "image": "https://www12.0zz0.com/2024/02/21/17/391721747.jpg"
     },
 
     {
       "id": 2001,
       "name": "product name",
-      "description": "product description",
-      "price": "299",
-      "image": "image url"
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
+      "price": "509",
+      "image": "https://www12.0zz0.com/2024/02/21/17/204890346.jpg",
+      "available": true
     },
     {
       "id": 2002,
       "name": "product name",
-      "description": "product description",
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
       "price": "299",
-      "image": "image url"
+      "image": "https://www10.0zz0.com/2024/02/21/17/801996758.jpg"
     },
     {
       "id": 2003,
       "name": "product name",
-      "description": "product description",
-      "price": "299",
-      "image": "image url"
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
+      "price": "49",
+      "image": "https://www10.0zz0.com/2024/02/21/17/557051180.jpg"
     },
     {
       "id": 2004,
       "name": "product name",
-      "description": "product description",
-      "price": "299",
-      "image": "image url"
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
+      "price": "99",
+      "image": "https://www12.0zz0.com/2024/02/21/17/679103687.jpg"
     },
     {
       "id": 2005,
       "name": "product name",
-      "description": "product description",
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
       "price": "299",
-      "image": "image url"
+      "image": "https://www12.0zz0.com/2024/02/21/17/391721747.jpg"
     }
   ]
 }

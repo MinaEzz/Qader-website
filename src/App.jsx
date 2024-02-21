@@ -6,6 +6,7 @@ import {
   AboutPage,
   LoginPage,
   RegisterationPage,
+  ProductDetailsPage,
 } from "./pages";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
             path="/products/:categoryURL/:categoryTITLE"
             element={<ProductsPage />}
           />
+          <Route path="/product/:productID" element={<ProductDetailsPage />} />
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/regist" element={<RegisterationPage />} />
