@@ -4,6 +4,10 @@ export const NAVLINKS = [
     path: "/",
   },
   {
+    title: "products",
+    path: "/products/all_products/all",
+  },
+  {
     title: "about",
     path: "/about-us",
   },
@@ -30,6 +34,7 @@ export const SERVICES = [
   { title: "fast shipping", icon: <FaShippingFast size={38} /> },
   { title: "job opportunities", icon: <FaFaceGrinStars size={38} /> },
 ];
+// home constants
 export const CATEGORIES = [
   {
     title: "all",
@@ -113,57 +118,49 @@ export const CATEGORIES = [
 export const RECCOMENDED_PRODUCTS = [
   {
     name: "Bagel Blade with Suction Cup Base",
-    image:
-      "https://img.freepik.com/premium-psd/wheelchair-transparent-background_812094-676.jpg?w=826",
+    image: "https://www10.0zz0.com/2024/02/21/16/713820805.jpg",
     price: 36.99,
     url: "",
   },
   {
     name: "Arthritis Gloves- Small- One Pair",
-    image:
-      "https://img.freepik.com/premium-psd/motorized-electric-wheelchair-senior-elder-patient-who-cannot-walk-isolated-elderly-woman-man-go-outside-home-hospital-free-outdoor-travel-as-disabled-clipping-path-white-background_121764-3027.jpg?w=740",
+    image: "https://www10.0zz0.com/2024/02/21/16/256196285.jpg",
     price: 21.95,
     url: "",
   },
   {
     name: "FootMate Complete Foot Care System",
-    image:
-      "https://img.freepik.com/free-vector/walker-with-wheels-elders_1308-29054.jpg?w=740&t=st=1708165186~exp=1708165786~hmac=94afa87dfd8f88f8fc33e4d49dd0997c12faf9eae3d40ba9b4837807f220abea",
+    image: "https://www10.0zz0.com/2024/02/21/16/484845597.jpg",
     price: 39.95,
     url: "",
   },
   {
     name: "Dr. Josephs Foot Brush",
-    image:
-      "https://img.freepik.com/premium-psd/wheelchair-transparent-background-3d-rendering-illustration_494250-15883.jpg?w=740",
+    image: "https://www12.0zz0.com/2024/02/21/17/391721747.jpg",
     price: 25.95,
     url: "",
   },
   {
     name: "Drive Folding Universal Sliding Transfer Bench",
-    image:
-      "https://img.freepik.com/premium-psd/wheelchair-transparent-background_812094-676.jpg?w=826",
+    image: "https://www12.0zz0.com/2024/02/21/17/391721747.jpg",
     price: 249,
     url: "",
   },
   {
     name: "Aluminum Rehab Shower Commode Chair with 24 inch Rear Wheels",
-    image:
-      "https://img.freepik.com/free-vector/walker-with-wheels-elders_1308-29054.jpg?w=740&t=st=1708165186~exp=1708165786~hmac=94afa87dfd8f88f8fc33e4d49dd0997c12faf9eae3d40ba9b4837807f220abea",
+    image: "https://www12.0zz0.com/2024/02/21/17/391721747.jpg",
     price: 1085,
     url: "",
   },
   {
     name: "Childrens Chaise with Headrest and Straps",
-    image:
-      "https://img.freepik.com/premium-psd/wheelchair-transparent-background_812094-676.jpg?w=826",
+    image: "https://www12.0zz0.com/2024/02/21/17/204890346.jpg",
     price: 269,
     url: "",
   },
   {
     name: "Bath Bench with Back and Arms",
-    image:
-      "https://img.freepik.com/premium-psd/wheelchair-transparent-background-3d-rendering-illustration_494250-15883.jpg?w=740",
+    image: "https://www12.0zz0.com/2024/02/21/17/391721747.jpg",
     price: 89.95,
     url: "",
   },

@@ -1,12 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { OurTitle, ProductCard } from "../components";
-import { useContext } from "react";
 import { ProductsContext } from "../context/getProducts";
 
 const ProductsPage = () => {
-  const productData = useContext(ProductsContext);
-  console.log(productData);
+  const products = useContext(ProductsContext);
+  console.log(products);
   const params = useParams();
   useEffect(() => {
     document.title = `${
@@ -27,7 +26,7 @@ const ProductsPage = () => {
       />
       <div className="container ">
         <ul className=" pd-y-s flex gap-8 flex-wrap items-center justify-around">
-          {productData.map((product) => {
+          {products.map((product) => {
             return <ProductCard key={product.id} {...product} />;
           })}
         </ul>

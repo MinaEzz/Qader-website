@@ -17,7 +17,9 @@ const LoginPage = () => {
           <img src={formVector} alt="Login Vector" />
         </div>
         <div className="flex flex-col gap-8 flex-1 w-full">
-          <h2 className="text-4xl font-bold uppercase text-primary">login</h2>
+          <h2 className="text-4xl font-bold uppercase text-primary-600">
+            login
+          </h2>
           <LoginForm setOpenModal={setOpenModal} />
           <p className="text-slate-700 text-xl text-center capitalize">
             don't have an account?

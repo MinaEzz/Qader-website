@@ -14,7 +14,9 @@ const RegisterationPage = () => {
           <img src={formVector} alt="Login Vector" />
         </div>
         <div className="flex flex-col gap-8 flex-1 w-full">
-          <h2 className="text-4xl font-bold uppercase text-primary">sign up</h2>
+          <h2 className="text-4xl font-bold uppercase text-primary-600">
+            sign up
+          </h2>
           <RegistForm />
           <p className="text-slate-700 text-xl text-center capitalize">
             already have an account?
