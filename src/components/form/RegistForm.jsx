@@ -121,7 +121,7 @@ const RegistForm = () => {
         </div>
       </div>
       {/* gender */}
-      <div className="w-full flex md:items-center justify-between gap-4 max-md:flex-col">
+      <div className="w-full flex justify-between gap-1 max-md:flex-col md:items-center md:gap-4">
         <label
           className="capitalize font-medium text-slate-700"
           htmlFor="birth-date"
