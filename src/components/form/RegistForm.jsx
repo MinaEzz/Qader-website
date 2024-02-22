@@ -13,40 +13,40 @@ const RegistForm = () => {
         name="name"
         placeholder="Name"
         required
-        className="w-full h-10 outline-none text-base text-neutral-600 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
+        className="w-full h-10 outline-none text-base text-neutral-700 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
       />
       <input
         type="email"
         name="email"
         placeholder="E-mail"
         required
-        className="w-full h-10 outline-none text-base text-neutral-600 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
+        className="w-full h-10 outline-none text-base text-neutral-700 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
       />
       <input
         type="text"
         name="username"
         placeholder="Username"
         required
-        className="w-full h-10 outline-none text-base text-neutral-600 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
+        className="w-full h-10 outline-none text-base text-neutral-700 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
       />
       <input
         type="password"
         name="password"
         placeholder="Password"
         required
-        className="w-full h-10 outline-none text-base text-neutral-600 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
+        className="w-full h-10 outline-none text-base text-neutral-700 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
       />
       <input
         type="password"
         name="confirmpassword"
         placeholder="Confirm Password"
         required
-        className="w-full h-10 outline-none text-base text-neutral-600 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
+        className="w-full h-10 outline-none text-base text-neutral-700 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
       />
       {/* basic info */}
       <div className="flex flex-col gap-2">
         <select
-          className="w-full h-10 p-2 outline-none rounded-xl border border-primary-600 capitalize text-base font-medium"
+          className="w-full h-10 p-2 outline-none rounded-xl border border-primary-600 capitalize text-base text-neutral-700 font-medium"
           name="profile type"
           id="profile-type"
           required
@@ -76,7 +76,7 @@ const RegistForm = () => {
         {profileType &&
           (profileType === "buyer" ? (
             <textarea
-              className=" w-full outline-none text-base text-neutral-600 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
+              className=" w-full outline-none text-base text-neutral-700 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
               rows="4"
               placeholder="Disability Details"
             />
@@ -86,7 +86,7 @@ const RegistForm = () => {
               name="company name"
               placeholder="Company Name"
               required
-              className="w-full h-10 outline-none text-base text-neutral-600 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
+              className="w-full h-10 outline-none text-base text-neutral-700 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
             />
           ))}
       </div>
@@ -129,7 +129,7 @@ const RegistForm = () => {
           enter your birth date
         </label>
         <input
-          className="w-full flex-1 h-10 p-2 outline-none rounded-lg border border-primary-600 capitalize text-base font-medium"
+          className="w-full flex-1 h-10 p-2 outline-none rounded-lg border border-primary-600 capitalize text-base font-medium text-neutral-700"
           type="date"
           name="birth-date"
           id="birth-date"

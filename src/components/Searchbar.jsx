@@ -76,7 +76,7 @@ const Searchbar = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           value={searchTerm}
           placeholder="Search something..."
-          className="w-full h-10 outline-none text-sm text-neutral-600  placeholder:text-neutral-500 py-2 pl-8 pr-10 rounded-3xl placeholder:text-sm"
+          className="w-full h-10 outline-none text-sm text-neutral-700  placeholder:text-neutral-500 py-2 pl-8 pr-10 rounded-3xl placeholder:text-sm"
         />
       </form>
       <button

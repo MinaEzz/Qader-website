@@ -31,7 +31,7 @@ const ForgetPasswordModal = ({ open, close }) => {
                 name="email"
                 placeholder="Enter Your Email"
                 required
-                className="w-full flex-1 h-10 outline-none text-sm text-neutral-600 font-medium placeholder:text-neutral-500 p-2 placeholder:text-sm placeholder:font-medium border border-primary-600 rounded-xl"
+                className="w-full flex-1 h-10 outline-none text-sm text-neutral-700 font-medium placeholder:text-neutral-500 p-2 placeholder:text-sm placeholder:font-medium border border-primary-600 rounded-xl"
               />
               <button
                 type="submit"

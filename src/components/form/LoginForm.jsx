@@ -9,7 +9,7 @@ const LoginForm = ({ setOpenModal }) => {
     <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
       <div className="relative border border-primary-600 rounded-xl">
         <FaUser
-          className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-600"
+          className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-700"
           fontSize={18}
           style={{ pointerEvents: "none" }}
         />
@@ -18,12 +18,12 @@ const LoginForm = ({ setOpenModal }) => {
           name="username"
           placeholder="Username"
           required
-          className="w-full h-10 outline-none text-base font-medium text-neutral-600 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-medium"
+          className="w-full h-10 outline-none text-base font-medium text-neutral-700 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-medium"
         />
       </div>
       <div className="relative border border-primary-600 rounded-xl">
         <FaLock
-          className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-600"
+          className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-700"
           fontSize={18}
           style={{ pointerEvents: "none" }}
         />
@@ -32,7 +32,7 @@ const LoginForm = ({ setOpenModal }) => {
           name="password"
           placeholder="Password"
           required
-          className="w-full h-10 outline-none text-base font-medium text-neutral-600 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-medium"
+          className="w-full h-10 outline-none text-base font-medium text-neutral-700 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-medium"
         />
       </div>
       <strong
