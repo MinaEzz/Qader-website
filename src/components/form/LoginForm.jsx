@@ -18,7 +18,7 @@ const LoginForm = ({ setOpenModal }) => {
           name="username"
           placeholder="Username"
           required
-          className="w-full h-10 outline-none text-base font-bold text-neutral-600 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-bold"
+          className="w-full h-10 outline-none text-base font-medium text-neutral-600 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-medium"
         />
       </div>
       <div className="relative border border-primary-600 rounded-xl">
@@ -32,7 +32,7 @@ const LoginForm = ({ setOpenModal }) => {
           name="password"
           placeholder="Password"
           required
-          className="w-full h-10 outline-none text-base font-bold text-neutral-600 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-bold"
+          className="w-full h-10 outline-none text-base font-medium text-neutral-600 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-medium"
         />
       </div>
       <strong
