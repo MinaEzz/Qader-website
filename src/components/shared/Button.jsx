@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const LandingButton = ({
   label,
   icon,
@@ -21,15 +23,15 @@ const LandingButton = ({
         activeBgColor ? activeBgColor : null
       } rounded-xl px-2 transition-all`}
     >
-      <a
+      <Link
         className={`flex items-center justify-center space-x-2 ${
           fontSize ? fontSize : "text-2xl"
         } capitalize rounded-3xl text-white w-full h-full`}
-        href={url}
+        to={url}
       >
         <span>{label}</span>
         {icon && icon}
-      </a>
+      </Link>
     </button>
   );
 };

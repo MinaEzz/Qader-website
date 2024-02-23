@@ -35,12 +35,12 @@ const LoginForm = ({ setOpenModal }) => {
           className="w-full h-10 outline-none text-base font-medium text-neutral-700 rounded-xl placeholder:text-neutral-500 py-2 pl-8 pr-10 placeholder:text-base placeholder:font-medium"
         />
       </div>
-      <strong
+      <label
         className="text-slate-700 capitalize font-medium text-lg cursor-pointer w-fit"
         onClick={() => setOpenModal(true)}
       >
         forget password?
-      </strong>
+      </label>
       <button
         type="submit"
         className="w-full h-14 flex items-center justify-center gap-1 rounded-xl bg-primary-600 hover:bg-primary-700 active:bg-primary-800 transition-all text-2xl capitalize font-bold text-white"

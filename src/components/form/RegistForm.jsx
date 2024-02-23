@@ -107,13 +107,7 @@ const RegistForm = () => {
               })}
             </select>
           ) : (
-            <input
-              type="text"
-              name="company name"
-              placeholder="Company Name"
-              required
-              className="w-full h-10 outline-none text-base text-neutral-700 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
-            />
+            <Input type="text" name="company name" placeholder="Company Name" />
           ))}
       </div>
       {/* ptofile-type */}
