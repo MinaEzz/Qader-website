@@ -6,12 +6,21 @@ const RegistForm = () => {
   const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
   const [username, setUsername] = useState(null);
+  const [phoneNum, setPhoneNum] = useState(null);
   const [password, setPassword] = useState(null);
   const [confirmPassword, setConfirmPassword] = useState(null);
   const [profileType, setProfileType] = useState(null);
   const [gender, setGender] = useState(null);
 
-  console.log(name, email, username, password, confirmPassword, profileType);
+  console.log(
+    name,
+    email,
+    username,
+    phoneNum,
+    password,
+    confirmPassword,
+    profileType
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,6 +45,12 @@ const RegistForm = () => {
         name="username"
         placeholder="Username"
         onChange={(e) => setUsername(e.target.value)}
+      />
+      <Input
+        type="tel"
+        name="phoneNumber"
+        placeholder="Phone Number"
+        onChange={(e) => setPhoneNum(e.target.value)}
       />
       <Input
         type="password"
