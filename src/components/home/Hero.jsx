@@ -8,7 +8,7 @@ const Hero = () => {
   const [slide, setSlide] = useState(0);
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (slide === 2) {
+      if (slide === 3) {
         setSlide(0);
       } else {
         setSlide(slide + 1);
@@ -33,7 +33,7 @@ const Hero = () => {
   }, [location]);
   return (
     <section
-      className="relative w-full min-h-[100dvh] transition-all ease-in-out duration-0 bg-cover bg-center bg-fixed"
+      className="relative w-full min-h-[100dvh] transition-all ease-in-out duration-700 bg-cover bg-center bg-no-repeat"
       style={backGround}
     >
       <div className="layer flex flex-col text-center justify-center items-center gap-4">

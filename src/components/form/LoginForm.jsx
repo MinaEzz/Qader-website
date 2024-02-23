@@ -36,7 +36,7 @@ const LoginForm = ({ setOpenModal }) => {
         />
       </div>
       <label
-        className="text-slate-700 capitalize font-medium text-lg cursor-pointer w-fit"
+        className="text-neutral-700 capitalize font-medium text-lg cursor-pointer w-fit"
         onClick={() => setOpenModal(true)}
       >
         forget password?

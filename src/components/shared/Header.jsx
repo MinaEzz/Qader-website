@@ -36,7 +36,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="relative rounded-full text-center h-fit bg-neutral-100 p-2">
-            <Link to="/checkout">
+            <Link to="/cart">
               <MdShoppingCart
                 fontSize={20}
                 title="Checkout"
