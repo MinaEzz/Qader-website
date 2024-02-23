@@ -17,6 +17,7 @@ import Footer from "./shared/Footer";
 import LoginForm from "./form/LoginForm";
 import RegistForm from "./form/RegistForm";
 import ForgetPasswordModal from "./form/ForgetPasswordModal";
+import Input from "./shared/Input";
 import ProductCard from "./products/ProductCard";
 export {
   Header,
@@ -38,5 +39,6 @@ export {
   LoginForm,
   RegistForm,
   ForgetPasswordModal,
+  Input,
   ProductCard,
 };

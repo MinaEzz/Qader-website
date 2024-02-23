@@ -24,7 +24,6 @@ export const NAVLINKS = [
     path: "/login",
   },
 ];
-
 // Services Constants
 import { FaRegFaceSmileBeam, FaFaceGrinStars } from "react-icons/fa6";
 import { FaDollarSign, FaShippingFast } from "react-icons/fa";
@@ -43,56 +42,6 @@ export const CATEGORIES = [
   {
     title: "home healthcare",
     url: "/home_healthcare",
-    products: [
-      {
-        name: "Bagel Blade with Suction Cup Base",
-        image: "",
-        price: 36.99,
-        url: "",
-      },
-      {
-        name: "Arthritis Gloves- Small- One Pair",
-        image: "",
-        price: 21.95,
-        url: "",
-      },
-      {
-        name: "FootMate Complete Foot Care System",
-        image: "",
-        price: 39.95,
-        url: "",
-      },
-      {
-        name: "Dr. Josephs Foot Brush",
-        image: "",
-        price: 25.95,
-        url: "",
-      },
-      {
-        name: "Drive Folding Universal Sliding Transfer Bench",
-        image: "",
-        price: 249,
-        url: "",
-      },
-      {
-        name: "Aluminum Rehab Shower Commode Chair with 24 inch Rear Wheels",
-        image: "",
-        price: 1085,
-        url: "",
-      },
-      {
-        name: "Childrens Chaise with Headrest and Straps",
-        image: "",
-        price: 269,
-        url: "",
-      },
-      {
-        name: "Bath Bench with Back and Arms",
-        image: "",
-        price: 89.95,
-        url: "",
-      },
-    ],
   },
   {
     title: "hearing & deaf",
@@ -165,7 +114,6 @@ export const RECCOMENDED_PRODUCTS = [
     url: "",
   },
 ];
-
 // About page Constants
 export const VISION =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ducimus eaque? Quod impedit accusamus reiciendis incidunt praesentium, odit non, laboriosam voluptatibus autem tenetur nostrum harum laborum delectus, optio deserunt. Quasi, soluta! Illo voluptatibus reprehenderit consectetur aut possimus? Soluta nobis corporis tempore ab. Autem eius quam laborum debitis aspernatur id adipisci, possimus, sapiente asperiores illum inventore, facere mollitia qui ut saepe. Necessitatibus quas reiciendis, harum soluta sint nam quia quis deserunt et dolores. Nam veniam fuga a, soluta possimus, dolorem officia distinctio voluptatibus quos, perferendis voluptate neque dolores alias? Totam, alias itaque ratione cumque ab quidem debitis nulla est molestias doloribus at delectus dolores accusamus esse fugiat ipsa rerum tempore amet? Et cum explicabo, nulla corrupti culpa nisi";
@@ -262,4 +210,15 @@ export const FOR_USERS = [
     title: "profile",
     url: "/profile",
   },
+];
+// regit form constants
+export const TYPESOFDISABILITY = [
+  "Mobility Impairments",
+  "Chronic Illnesses",
+  "Recovery from Surgery or Injury",
+  "Deafness or Hearing Impairments",
+  "Blindness or Vision Impairments",
+  "Cognitive Disabilities",
+  "Various Disabilities",
+  "other",
 ];

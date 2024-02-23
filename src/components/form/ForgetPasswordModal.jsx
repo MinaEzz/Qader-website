@@ -1,6 +1,7 @@
 import { IoClose } from "react-icons/io5";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Input from "../shared/Input";
 
 const ForgetPasswordModal = ({ open, close }) => {
   const handleSubmit = (e) => {
@@ -26,13 +27,8 @@ const ForgetPasswordModal = ({ open, close }) => {
             onSubmit={handleSubmit}
           >
             <div className="w-full flex gap-2 items-center">
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter Your Email"
-                required
-                className="w-full flex-1 h-10 outline-none text-sm text-neutral-700 font-medium placeholder:text-neutral-500 p-2 placeholder:text-sm placeholder:font-medium border border-primary-600 rounded-xl"
-              />
+              <Input type="email" name="email" placeholder="Enter Your Email" />
+
               <button
                 type="submit"
                 className="w-[70px] h-10 rounded-xl bg-primary-600 hover:bg-primary-700 active:bg-primary-800 text-base capitalize font-bold text-white"
