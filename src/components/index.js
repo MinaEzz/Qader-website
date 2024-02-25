@@ -19,6 +19,7 @@ import RegistForm from "./form/RegistForm";
 import ForgetPasswordModal from "./form/ForgetPasswordModal";
 import Input from "./shared/Input";
 import ProductCard from "./products/ProductCard";
+import EditProfileForm from "./form/EditProfileForm";
 export {
   Header,
   Navbar,
@@ -41,4 +42,5 @@ export {
   ForgetPasswordModal,
   Input,
   ProductCard,
+  EditProfileForm,
 };

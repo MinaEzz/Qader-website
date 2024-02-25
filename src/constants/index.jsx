@@ -116,10 +116,15 @@ export const RECCOMENDED_PRODUCTS = [
 ];
 // About page Constants
 export const VISION =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ducimus eaque? Quod impedit accusamus reiciendis incidunt praesentium, odit non, laboriosam voluptatibus autem tenetur nostrum harum laborum delectus, optio deserunt. Quasi, soluta! Illo voluptatibus reprehenderit consectetur aut possimus? Soluta nobis corporis tempore ab. Autem eius quam laborum debitis aspernatur id adipisci, possimus, sapiente asperiores illum inventore, facere mollitia qui ut saepe. Necessitatibus quas reiciendis, harum soluta sint nam quia quis deserunt et dolores. Nam veniam fuga a, soluta possimus, dolorem officia distinctio voluptatibus quos, perferendis voluptate neque dolores alias? Totam, alias itaque ratione cumque ab quidem debitis nulla est molestias doloribus at delectus dolores accusamus esse fugiat ipsa rerum tempore amet? Et cum explicabo, nulla corrupti culpa nisi";
+  "Create an inclusive and empowering online space where individuals with disabilities can access a diverse range of specialized equipment and explore meaningful job opportunities. We envision a world where everyone, regardless of ability, has the tools and opportunities to lead a fulfilling and independent life.";
 
-export const MISSION =
-  "qui repudiandae hic quis eligendi consectetur facere perspiciatis, dignissimos saepe quisquam possimus aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos sunt accusamus earum voluptatibus officia? Iste ea, nemo temporibus dolorum culpa ipsa deserunt quaerat corrupti velit ipsam atque repellat ducimus optio animi quo, voluptatum dolor sequi necessitatibus quos consectetur! Quidem cumque labore tempora? Neque molestias suscipit ";
+export const MISSION = `Offer a curated selection of high-quality equipment designed to enhance the daily lives of individuals with disabilities, promoting accessibility and independence.
+  Cultivate an inclusive online community that celebrates diversity and fosters a sense of belonging, ensuring that our users feel seen, heard, and valued.
+  Connect individuals with disabilities to meaningful job opportunities, partnering with organizations that prioritize diversity and inclusivity in the workplace.
+  Raise awareness about the challenges faced by individuals with disabilities and advocate for a more inclusive society. Support initiatives that promote accessibility and equal opportunities.
+  Deliver exceptional customer service to ensure a positive and supportive experience for every user, from product selection to employment connections.
+  we strive to revolutionize the shopping experience for people with disabilities.
+  `;
 
 // Footer Constants
 import {

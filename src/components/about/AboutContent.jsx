@@ -5,7 +5,7 @@ const AboutContent = ({ title, content, image }) => {
         <h3 className="text-primary-600 text-3xl font-bold capitalize">
           {title}
         </h3>
-        <p className="mt-6 text-stone-600 text-base"> {content} </p>
+        <p className="mt-6 text-stone-600 text-lg"> {content} </p>
       </div>
       <div className="w-full lg:flex-1 h-[500px]">
         <img src={image} alt="Vision image" />

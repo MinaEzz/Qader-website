@@ -8,7 +8,6 @@ const AboutPage = () => {
     document.title = "About Us";
     window.scrollTo(0, 0);
   }, []);
-
   return (
     <section className="min-h-[100dvh] pd-y bg-white">
       <UsTitle title="about" />

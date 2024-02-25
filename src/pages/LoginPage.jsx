@@ -8,6 +8,7 @@ const LoginPage = () => {
   const closeModal = () => setOpenModal(false);
   useEffect(() => {
     document.title = "Sign In";
+    window.scrollTo(0, 0);
   }, []);
 
   return (

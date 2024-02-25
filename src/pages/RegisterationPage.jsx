@@ -6,6 +6,7 @@ import { useEffect } from "react";
 const RegisterationPage = () => {
   useEffect(() => {
     document.title = "Sign Up";
+    window.scrollTo(0, 0);
   }, []);
   return (
     <section className="min-h-[100dvh] pd-y bg-white">

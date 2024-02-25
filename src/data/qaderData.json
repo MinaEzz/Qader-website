@@ -39,7 +39,6 @@
       "price": "299",
       "image": "https://www12.0zz0.com/2024/02/21/17/391721747.jpg"
     },
-
     {
       "id": 2001,
       "name": "product name",
@@ -75,6 +74,67 @@
       "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
       "price": "299",
       "image": "https://www12.0zz0.com/2024/02/21/17/391721747.jpg"
+    }
+  ],
+  "users": [
+    {
+      "name": "Mina Ezzat",
+      "email": "minaezzat98@gmail.com",
+      "username": "MinaEzz19",
+      "phoneNumber": "01122711186",
+      "password": "0000",
+      "confirmPassword": "0000",
+      "gender": "male",
+      "dateOfBirth": "2001-01-19",
+      "profileType": "buyer",
+      "typeOfDisability": "Recovery from Surgery or Injury",
+      "companyName": "",
+      "id": 1
+    },
+    {
+      "name": "test",
+      "email": "test@yahoo.com",
+      "username": "testtest",
+      "phoneNumber": "1234",
+      "password": "123",
+      "confirmPassword": "123",
+      "gender": "female",
+      "dateOfBirth": "2024-02-03",
+      "profileType": "employer",
+      "typeOfDisability": "",
+      "companyName": "velva",
+      "id": 2
+    },
+    {
+      "name": "test",
+      "email": "test@yahoo.com",
+      "username": "root",
+      "phoneNumber": "122",
+      "password": "mm",
+      "confirmPassword": "mm",
+      "gender": "other",
+      "dateOfBirth": "2014-01-15",
+      "age": 10,
+      "profileType": "employer",
+      "typeOfDisability": "",
+      "companyName": "testos",
+      "id": 3
+    },
+    {
+      "name": "test",
+      "email": "test@yahoo.com",
+      "username": "root",
+      "phoneNumber": "122",
+      "password": "mm",
+      "confirmPassword": "mm",
+      "gender": "other",
+      "dateOfBirth": "2014-01-15",
+      "profileType": "buyer",
+      "typeOfDisability": "",
+      "companyName": "",
+      "disabilityType": "Various Disabilities",
+      "age": 10,
+      "id": 4
     }
   ]
 }

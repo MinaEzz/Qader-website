@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const HomePage = () => {
   useEffect(() => {
     document.title = "Welcome to Qader";
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
