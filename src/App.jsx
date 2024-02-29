@@ -8,6 +8,7 @@ import {
   LoginPage,
   RegisterationPage,
   ProductDetailsPage,
+  UserProfilePage,
 } from "./pages";
 
 const App = () => {
@@ -27,7 +28,7 @@ const App = () => {
           <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/regist" element={<RegisterationPage />} />
-          <Route path="/profile" />
+          <Route path="/profile" element={<UserProfilePage />} />
         </Routes>
         <Footer />
       </Router>

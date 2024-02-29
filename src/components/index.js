@@ -19,6 +19,9 @@ import RegistForm from "./form/RegistForm";
 import ForgetPasswordModal from "./form/ForgetPasswordModal";
 import Input from "./shared/Input";
 import ProductCard from "./products/ProductCard";
+import QuantitySelector from "./products/QuantitySelector";
+import ProductFeedback from "./products/ProductFeedback";
+import FeedbackForm from "./form/FeedbackForm";
 import EditProfileForm from "./form/EditProfileForm";
 export {
   Header,
@@ -42,5 +45,8 @@ export {
   ForgetPasswordModal,
   Input,
   ProductCard,
+  QuantitySelector,
+  ProductFeedback,
+  FeedbackForm,
   EditProfileForm,
 };

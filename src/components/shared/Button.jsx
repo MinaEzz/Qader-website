@@ -26,7 +26,7 @@ const LandingButton = ({
       <Link
         className={`flex items-center justify-center space-x-2 ${
           fontSize ? fontSize : "text-2xl"
-        } capitalize rounded-3xl text-white w-full h-full`}
+        } capitalize text-white w-full h-full`}
         to={url}
       >
         <span>{label}</span>

@@ -8,7 +8,7 @@ const Hero = () => {
   const [slide, setSlide] = useState(0);
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (slide === 3) {
+      if (slide === 2) {
         setSlide(0);
       } else {
         setSlide(slide + 1);
@@ -41,7 +41,7 @@ const Hero = () => {
           Qader
         </h1>
         <p className=" text-white text-4xl font-bold capitalize">
-          breaking <span className="text-coral-red text-5xl">boundaries</span>,
+          breaking <span className="text-stone-500 text-5xl">boundaries</span>,
           building
           <span className="text-primary-600 text-5xl"> accessibility</span>
         </p>

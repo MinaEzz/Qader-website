@@ -2,78 +2,93 @@
   "products": [
     {
       "id": 1001,
-      "name": "product name",
-      "description": " aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
-      "price": "219",
+      "name": "Easy-to-Use Lifetime Warranty Pull String Alarm",
+      "description": "This Pull-String Fall Monitor features a magnet-positioned cord that attaches via a garment clip to the resident's clothing. When the resident attempts to get out of their chair, the tension on the Pull-String Cord causes the magnet to pull away from its position, causing the fall alarm to sound and alerting the caregiver of the resident's departure.",
+      "price": 52.95,
       "image": "https://www12.0zz0.com/2024/02/21/17/204890346.jpg",
-      "available": true
+      "available": true,
+      "feedback": ""
     },
     {
       "id": 1002,
       "name": "product name",
-      "description": " aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos",
       "price": "29",
       "image": "https://www10.0zz0.com/2024/02/21/16/256196285.jpg",
-      "available": false
+      "available": false,
+      "feedback": ""
     },
     {
       "id": 1003,
-      "name": "product name",
-      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
-      "price": "249",
+      "name": "Bagel Blade with Suction Cup Base",
+      "description": "Cutting bagels with a knife can be tricky and potentially dangerous, resulting in cuts to your fingers and hands. But now bagel cutting is fast, easy, and safe!",
+      "price": 36.99,
       "image": "https://www10.0zz0.com/2024/02/21/16/713820805.jpg",
-      "available": false
+      "available": true,
+      "feedback": ""
     },
     {
       "id": 1004,
-      "name": "product name",
-      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
-      "price": "299",
+      "name": "Arthritis Gloves- Small- One Pair",
+      "description": "Arthritis Gloves provide mild compression to enhance blood circulation, helping to relieve arthritis, hand pain and swelling, and cold hands. Open fingertips allow freedom to touch, feel, and grip, while the cotton lycra material allows the skin to breathe. Comfortable to use all day and night. Latex-free. One pair. To find the correct size, measure across the knuckles: Small up to 3 1/8",
+      "price": 21.95,
       "image": "https://www10.0zz0.com/2024/02/21/16/484845597.jpg",
-      "available": true
+      "available": true,
+      "feedback": ""
     },
     {
       "id": 1005,
       "name": "product name",
-      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos",
       "price": "299",
-      "image": "https://www12.0zz0.com/2024/02/21/17/391721747.jpg"
+      "image": "https://www12.0zz0.com/2024/02/21/17/391721747.jpg",
+      "available": false,
+      "feedback": ""
+    },
+    {
+      "id": 1006,
+      "name": "Mindfold Sleeping Mask",
+      "description": "Mindfold Sleeping Mask - Have a good night's rest with this sleeping mask. A sleep and travel mask that is impervious to light, even direct sunlight, this sleeping mask is even great for traveling. Best of all, this sleeping mask won't smudge eye makeup. Aids in relaxation and sleep. Consists of a highly durable plastic lens, high density, soft foam, and secured by a comfortable elastic strap.",
+      "price": 14.95,
+      "image": "https://www10.0zz0.com/2024/02/21/17/801996758.jpg",
+      "available": true,
+      "feedback": ""
+    },
+    {
+      "id": 1007,
+      "name": "MedAire 5 inch Low Air Loss Pump and Mattress System",
+      "description": "High Volume pump produces 6-8 liters per minute pressure to allow fast inflation. Pump has LED indicators to identify normal/ low pressure level. Mattress has 9 air tubes Spring loaded prevent kinks and disruption of air pressure. Water-proof cover.",
+      "price": "525",
+      "image": "https://www12.0zz0.com/2024/02/21/17/679103687.jpg",
+      "available": true,
+      "feedback": ""
     },
     {
       "id": 2001,
       "name": "product name",
-      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos",
       "price": "509",
       "image": "https://www12.0zz0.com/2024/02/21/17/204890346.jpg",
-      "available": true
+      "available": false,
+      "feedback": ""
     },
     {
       "id": 2002,
       "name": "product name",
-      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
-      "price": "299",
-      "image": "https://www10.0zz0.com/2024/02/21/17/801996758.jpg"
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos",
+      "price": "49",
+      "image": "https://www10.0zz0.com/2024/02/21/17/557051180.jpg",
+      "available": false,
+      "feedback": ""
     },
     {
       "id": 2003,
       "name": "product name",
-      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
-      "price": "49",
-      "image": "https://www10.0zz0.com/2024/02/21/17/557051180.jpg"
-    },
-    {
-      "id": 2004,
-      "name": "product name",
-      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
-      "price": "99",
-      "image": "https://www12.0zz0.com/2024/02/21/17/679103687.jpg"
-    },
-    {
-      "id": 2005,
-      "name": "product name",
-      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos ",
+      "description": "aut itaque atque. Ut esse laudantium amet molestiae fuga sunt illum similique aperiam repellat, vero explicabo iusto deleniti doloribus neque ea rem optio a veniam veritatis error! Architecto soluta eos quaerat sed voluptatem corrupti culpa nisi sapiente ducimus earum. Alias exercitationem sit ipsam quos",
       "price": "299",
-      "image": "https://www12.0zz0.com/2024/02/21/17/391721747.jpg"
+      "image": "https://www12.0zz0.com/2024/02/21/17/391721747.jpg",
+      "available": false,
+      "feedback": ""
     }
   ],
   "users": [
@@ -119,22 +134,7 @@
       "typeOfDisability": "",
       "companyName": "testos",
       "id": 3
-    },
-    {
-      "name": "test",
-      "email": "test@yahoo.com",
-      "username": "root",
-      "phoneNumber": "122",
-      "password": "mm",
-      "confirmPassword": "mm",
-      "gender": "other",
-      "dateOfBirth": "2014-01-15",
-      "profileType": "buyer",
-      "typeOfDisability": "",
-      "companyName": "",
-      "disabilityType": "Various Disabilities",
-      "age": 10,
-      "id": 4
     }
-  ]
+  ],
+  "cart": []
 }

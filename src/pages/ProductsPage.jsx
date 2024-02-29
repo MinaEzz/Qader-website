@@ -5,7 +5,6 @@ import { ProductsContext } from "../context/getProducts";
 
 const ProductsPage = () => {
   const products = useContext(ProductsContext);
-  console.log(products);
   const params = useParams();
   useEffect(() => {
     document.title = `${
@@ -14,7 +13,6 @@ const ProductsPage = () => {
         : `Products Of ${params.categoryTITLE}`
     }`;
   }, [params.categoryTITLE]);
-
   return (
     <section className="min-h-[100dvh] pd-y">
       <OurTitle

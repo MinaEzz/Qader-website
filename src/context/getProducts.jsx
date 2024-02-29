@@ -12,7 +12,6 @@ function ProductsProvider({ children }) {
         console.log("Promise resolved and HTTP status is successful");
         const data = await response.json();
         setProducts(data);
-        console.log(products);
       } else {
         // Custom message for failed HTTP codes
         if (response.status === 404) throw new Error("404, Not found");

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 import { LuLogIn } from "react-icons/lu";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const LoginForm = ({ setOpenModal }) => {
   const BASE_URL = "http://localhost:5000";
@@ -32,9 +34,16 @@ const LoginForm = ({ setOpenModal }) => {
       );
       if (!user || user.password !== loginData.password) {
         console.error("Invalid credentials");
+        toast.error("Invalid credentials", {
+          theme: "colored",
+        });
         return;
       }
       console.log("Login successful");
+      toast.error("Login successful", {
+        theme: "colored",
+      });
+
       // Optionally: Redirect to the user's dashboard or perform additional actions
     } catch (error) {
       console.error("Error during login:", error);
@@ -87,6 +96,7 @@ const LoginForm = ({ setOpenModal }) => {
       >
         login <LuLogIn fontSize={28} color="white" />
       </button>
+      <ToastContainer />
     </form>
   );
 };

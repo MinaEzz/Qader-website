@@ -20,14 +20,14 @@ const ProductCard = ({ ...product }) => {
         <img className="rounded-xl" src={product.image} alt="product image" />
       </div>
       <div className="flex flex-col gap-2 justify-center items-center">
-        <h4 className="text-center text-2xl capitalize font-medium text-primary-600">
-          {`${product.name.slice(0, 26)}`}
+        <h4 className="text-center text-xl capitalize font-medium text-primary-600">
+          {`${product?.name.slice(0, 26)}`}
         </h4>
-        <p className="text-center text-base text-slate-700">
-          {`${product.description.slice(0, 120)}...`}
+        <p className="text-center text-sm text-slate-700">
+          {`${product?.description.slice(0, 120)}...`}
         </p>
       </div>
-      <div className="flex items-center justify-between w-full gap-8">
+      <div className="flex flex-col items-center justify-between w-full gap-2">
         <Button
           label={<FaPlus fontSize={20} />}
           backgroundColor="bg-slate-700"
@@ -40,7 +40,7 @@ const ProductCard = ({ ...product }) => {
           label={"details"}
           fontSize="text-base"
           height="h-10"
-          url={`/product/${product.id}`}
+          url={`/product/${product?.id}`}
         />
       </div>
     </li>
