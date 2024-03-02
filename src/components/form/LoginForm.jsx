@@ -51,7 +51,12 @@ const LoginForm = ({ setOpenModal }) => {
   };
 
   return (
-    <form className="flex flex-col gap-4" onSubmit={handleSubmit} method="POST">
+    <form
+      className="flex flex-col gap-4"
+      onSubmit={handleSubmit}
+      method="POST"
+      aria-labelledby="Login Form"
+    >
       <div className="relative border border-primary-600 rounded-xl">
         <FaUser
           className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-700"

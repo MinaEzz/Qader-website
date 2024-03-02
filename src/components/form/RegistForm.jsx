@@ -113,7 +113,12 @@ const RegistForm = () => {
   };
 
   return (
-    <form className="flex flex-col gap-4" onSubmit={handleSubmit} method="POST">
+    <form
+      className="flex flex-col gap-4"
+      onSubmit={handleSubmit}
+      method="POST"
+      aria-labelledby="Register Form"
+    >
       <Input
         type="text"
         name="name"

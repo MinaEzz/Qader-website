@@ -11,7 +11,7 @@ const MobileNavbar = (probs) => {
     >
       <div className="flex flex-1 flex-col gap-4 ">
         <Searchbar />
-        <nav className="flex-1">
+        <nav className="flex-1" aria-label="Main Navigation">
           <ul className="flex flex-col items-center gap-4">
             {NAVLINKS.map((link) => {
               return (

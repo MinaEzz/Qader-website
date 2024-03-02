@@ -5,7 +5,7 @@ export const NAVLINKS = [
   },
   {
     title: "products",
-    path: "/products/all_products/all",
+    path: "/products",
   },
   {
     title: "about",
@@ -36,30 +36,32 @@ export const SERVICES = [
 // home constants
 export const CATEGORIES = [
   {
-    title: "all",
-    url: "/all_Products",
-  },
-  {
+    id: 1,
     title: "home healthcare",
     url: "/home_healthcare",
   },
   {
+    id: 2,
     title: "hearing & deaf",
     url: "/hearing_and_deaf",
   },
   {
+    id: 3,
     title: "household",
     url: "/household",
   },
   {
+    id: 4,
     title: "mobility",
     url: "/mobility",
   },
   {
+    id: 5,
     title: "vision & blind",
     url: "/vision_and_blind",
   },
   {
+    id: 6,
     title: "technology",
     url: "/technology",
   },
@@ -175,31 +177,31 @@ export const PAGES = [
 export const FOOTER_CATEGORIES = [
   {
     title: "all",
-    url: "products/all_Products/all",
+    url: "products/",
   },
   {
     title: "home healthcare",
-    url: "products/home_healthcare/home healthcare",
+    url: "products/1/home healthcare",
   },
   {
     title: "hearing & deaf",
-    url: "products/hearing_and_deaf/hearing & deaf",
+    url: "products/2/hearing & deaf",
   },
   {
     title: "household",
-    url: "products/household/household",
+    url: "products/3/household",
   },
   {
     title: "mobility",
-    url: "products/mobility/mobility",
+    url: "products/4/mobility",
   },
   {
     title: "vision & blind",
-    url: "products/vision_and_blind/vision & blind",
+    url: "products/5/vision & blind",
   },
   {
     title: "technology",
-    url: "products/technology/technology",
+    url: "products/6/technology",
   },
 ];
 export const FOR_USERS = [
@@ -226,4 +228,37 @@ export const TYPESOFDISABILITY = [
   "Cognitive Disabilities",
   "Various Disabilities",
   "other",
+];
+// jobs constants
+export const JOBS = [
+  {
+    id: 1,
+    title: "Job Title 1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat veniam earum vel, possimus ducimus modi? Illo iure obcaecati quibusdam quaerat, nostrum reiciendis? Sint, totam eaque fugit amet quae aliquam. 1",
+  },
+  {
+    id: 2,
+    title: "Job Title 2",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat veniam earum vel, possimus ducimus modi? Illo iure obcaecati quibusdam quaerat, nostrum reiciendis? Sint, totam eaque fugit amet quae aliquam. 2",
+  },
+  {
+    id: 3,
+    title: "Job Title 3",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat veniam earum vel, possimus ducimus modi? Illo iure obcaecati quibusdam quaerat, nostrum reiciendis? Sint, totam eaque fugit amet quae aliquam. 3",
+  },
+  {
+    id: 4,
+    title: "Job Title 4",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat veniam earum vel, possimus ducimus modi? Illo iure obcaecati quibusdam quaerat, nostrum reiciendis? Sint, totam eaque fugit amet quae aliquam. 4",
+  },
+  {
+    id: 5,
+    title: "Job Title 5",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat veniam earum vel, possimus ducimus modi? Illo iure obcaecati quibusdam quaerat, nostrum reiciendis? Sint, totam eaque fugit amet quae aliquam. 5",
+  },
 ];

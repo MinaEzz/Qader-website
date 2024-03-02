@@ -1,9 +1,9 @@
-import Input from "../shared/Input";
 const FeedbackForm = () => {
   return (
-    <form className="w-full flex flex-col gap-4">
-      <Input type="text" name="name" id="name" placeholder="Name" />
-      <Input type="email" name="email" id="email" placeholder="E-mail" />
+    <form
+      className="w-full flex flex-col gap-4"
+      aria-labelledby="Feedback Form"
+    >
       <textarea
         name="feedback"
         id="feedback"

@@ -5,6 +5,8 @@ import appleIcon from "./icons/appleStore.png";
 import missionVector from "./vectors/mission-vector.png";
 import visionVector from "./vectors/vision-vector.png";
 import formVector from "./vectors/form-vector.png";
+import jobsVector from "./vectors/jobs-vector.png";
+import jobVector from "./vectors/job-vector.jpg";
 export {
   blueLogo,
   whiteLogo,
@@ -13,4 +15,6 @@ export {
   missionVector,
   visionVector,
   formVector,
+  jobsVector,
+  jobVector,
 };

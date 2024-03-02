@@ -19,9 +19,13 @@ import RegistForm from "./form/RegistForm";
 import ForgetPasswordModal from "./form/ForgetPasswordModal";
 import Input from "./shared/Input";
 import ProductCard from "./products/ProductCard";
+import Pagination from "./Pagination";
 import QuantitySelector from "./products/QuantitySelector";
+import ProductRates from "./products/ProductRates";
 import ProductFeedback from "./products/ProductFeedback";
 import FeedbackForm from "./form/FeedbackForm";
+import AddJobForm from "./form/AddJobForm";
+import JobAccordionCard from "./jobs/JobAccordionCard";
 import EditProfileForm from "./form/EditProfileForm";
 export {
   Header,
@@ -45,8 +49,12 @@ export {
   ForgetPasswordModal,
   Input,
   ProductCard,
+  Pagination,
   QuantitySelector,
+  ProductRates,
   ProductFeedback,
   FeedbackForm,
+  AddJobForm,
+  JobAccordionCard,
   EditProfileForm,
 };

@@ -1,10 +1,11 @@
 import { useEffect, useContext, useState } from "react";
 import { ProductsContext } from "../context/getProducts";
 import { useParams } from "react-router-dom";
-import { QuantitySelector, ProductFeedback } from "../components";
+import { QuantitySelector, ProductFeedback, ProductRates } from "../components";
 import { FaCartArrowDown } from "react-icons/fa6";
 
 const ProductDetailsPage = () => {
+  // ht3ml fetch ll api ely bygeb product wa7d w tb3tlo mn el params el product id
   const products = useContext(ProductsContext);
   const [quantity, setQuantity] = useState(1);
   const params = useParams();
@@ -27,6 +28,7 @@ const ProductDetailsPage = () => {
             <h3 className="text-primary-600 text-3xl font-bold capitalize">
               {matchedProduct.name}
             </h3>
+            <ProductRates stars={2.3} />
             <p className="text-stone-600 text-base">
               {matchedProduct.description}
             </p>

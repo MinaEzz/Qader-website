@@ -51,6 +51,7 @@ const ForgetPasswordModal = ({ open, close }) => {
           <form
             className=" bg-slate-00 w-full my-auto flex flex-col gap-1"
             onSubmit={handleSubmit}
+            aria-labelledby="Forget Password Form"
           >
             <div className="w-full flex gap-2 items-center">
               <Input

@@ -9,6 +9,9 @@ import {
   RegisterationPage,
   ProductDetailsPage,
   UserProfilePage,
+  JobsPage,
+  AddJobPage,
+  PageNotFound,
 } from "./pages";
 
 const App = () => {
@@ -20,15 +23,19 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route
-            path="/products/:categoryURL/:categoryTITLE"
+            path="/products/:categoryID/:categoryTITLE"
             element={<ProductsPage />}
           />
-          <Route path="/product/:productID" element={<ProductDetailsPage />} />
+          <Route path="/products/" element={<ProductsPage />} />
+          <Route path="/products/:productID" element={<ProductDetailsPage />} />
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/regist" element={<RegisterationPage />} />
+          <Route path="/jobs" element={<JobsPage />} />
+          <Route path="/add-job" element={<AddJobPage />} />
           <Route path="/profile" element={<UserProfilePage />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </Router>

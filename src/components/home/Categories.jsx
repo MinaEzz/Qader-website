@@ -11,15 +11,20 @@ const Categories = () => {
         <div className="absolute w-3 h-3 border border-slate-700 bg-white rounded-full"></div>
       </div>
       <ul className="flex flex-1 flex-col max-lg:flex-row gap-4 max-lg:gap-8 mt-4 overflow-auto">
+        <li className="flex items-center flex-1 text-xl font-medium capitalize text-slate-700 py-2 max-lg:text-center hover:text-primary-600 transition-all ease-in-out duration-500">
+          <Link className="w-full px-4 text-center" to={"/products"}>
+            all
+          </Link>
+        </li>
         {CATEGORIES.map((category) => {
           return (
             <li
               className="flex items-center flex-1 text-xl font-medium capitalize text-slate-700 py-2 max-lg:text-center hover:text-primary-600 transition-all ease-in-out duration-500"
-              key={category.title}
+              key={category.id}
             >
               <Link
                 className="w-full px-4 text-center"
-                to={`/products${category.url}/${category.title}`}
+                to={`/products/${category.id}/${category.title}`}
               >
                 {category.title}
               </Link>

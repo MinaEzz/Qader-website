@@ -40,7 +40,7 @@ const ProductCard = ({ ...product }) => {
           label={"details"}
           fontSize="text-base"
           height="h-10"
-          url={`/product/${product?.id}`}
+          url={`/products/${product?.id}`}
         />
       </div>
     </li>

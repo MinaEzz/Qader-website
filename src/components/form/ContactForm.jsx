@@ -5,7 +5,11 @@ const ContactForm = () => {
     e.preventDefault();
   };
   return (
-    <form className=" w-full flex flex-col gap-4" onSubmit={handleSubmit}>
+    <form
+      className=" w-full flex flex-col gap-4"
+      onSubmit={handleSubmit}
+      aria-labelledby="Contact Form"
+    >
       <div className="w-full flex gap-2 items-center justify-between">
         <Input
           type="text"
@@ -35,7 +39,7 @@ const ContactForm = () => {
       />
       <button
         type="submit"
-        className=" w-52 mx-auto h-14 flex items-center justify-center gap-1 rounded-xl bg-primary-600 hover:bg-primary-700 active:bg-primary-800 transition-all text-2xl capitalize font-bold text-white"
+        className=" w-52 mx-auto h-14  rounded-xl bg-primary-600 hover:bg-primary-700 active:bg-primary-800 transition-all text-2xl capitalize font-bold text-white"
       >
         submit
       </button>
