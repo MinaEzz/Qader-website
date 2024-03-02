@@ -65,9 +65,8 @@ const Searchbar = () => {
   return (
     <div className="relative flex items-center flex-1 border border-primary-600 rounded-xl">
       <IoSearchOutline
-        className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-600"
+        className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-600 pointer-events-none"
         fontSize={18}
-        style={{ pointerEvents: "none" }}
       />
       <form className="w-full" onSubmit={handleSubmit}>
         <input

@@ -38,7 +38,9 @@ const JobAccordionCard = ({ job }) => {
       </div>
       <div
         className={`flex gap-2 justify-between max-md:flex-col transition-max-height duration-300 ease-in-out ${
-          isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+          isOpen
+            ? "max-h-screen max-w-full opacity-100"
+            : "max-h-0 max-w-0 opacity-0 pointer-events-none"
         }`}
       >
         <div className="w-full flex-1 h-[200px]">
