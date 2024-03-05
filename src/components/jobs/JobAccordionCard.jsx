@@ -9,16 +9,16 @@ const JobAccordionCard = ({ job }) => {
   };
 
   return (
-    <div className="w-full flex flex-col gap-4 bg-white shadow-md rounded-xl p-4 transition-all ease-in-out duration-300">
+    <div className="w-full flex flex-col gap-4 bg-white dark:bg-slate-900 shadow-md rounded-xl p-4 transition-all ease-in-out duration-300">
       <div
         className=" w-full flex justify-between items-center cursor-pointer "
         onClick={toggleAccordion}
       >
-        <h3 className="text-xl capitalize font-semibold text-slate-700">
+        <h3 className="text-xl capitalize font-semibold text-slate-700 dark:text-slate-600">
           {job.title}
         </h3>
         <svg
-          className={`w-6 h-6 text-slate-700 ${
+          className={`w-6 h-6 text-slate-700 dark:text-slate-600 ${
             isOpen
               ? "transform rotate-180 transition-all ease-in-out duration-300"
               : "transition-all ease-in-out duration-300"

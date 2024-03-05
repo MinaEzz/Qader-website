@@ -10,7 +10,7 @@ const ContactUsPage = () => {
   }, []);
 
   return (
-    <section className="min-h-[100dvh] pd-y bg-white">
+    <section className="min-h-[100dvh] pd-y bg-white dark:bg-slate-950">
       <UsTitle title="contact" />
       <div className="container flex justify-between items-center max-lg:flex-col gap-4 mt-8">
         <section className="w-full flex-1">

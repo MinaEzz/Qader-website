@@ -9,7 +9,7 @@ const AboutPage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className="min-h-[100dvh] pd-y bg-white">
+    <section className="min-h-[100dvh] pd-y bg-white dark:bg-slate-950">
       <UsTitle title="about" />
       <div className="container flex flex-col gap-4 mt-8">
         <AboutContent title="vision" content={VISION} image={visionVector} />

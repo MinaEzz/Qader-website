@@ -36,7 +36,7 @@ const ProductDetailsPage = () => {
               ${matchedProduct.price}
             </p>
             <div className="w-full flex items-center gap-2">
-              <p className="text-lg capitalize text-slate-700">
+              <p className="text-lg capitalize text-slate-700 dark:text-slate-600">
                 select the quantity
               </p>
               <QuantitySelector quantity={quantity} setQuantity={setQuantity} />

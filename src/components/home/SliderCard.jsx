@@ -14,7 +14,7 @@ const SliderCard = ({ productImg, productName, productPrice, productURL }) => {
       </div>
       <div className="flex justify-between items-end ">
         <div className="flex flex-1 w-full flex-col">
-          <h3 className="text-base capitalize font-bold text-slate-700">
+          <h3 className="text-base capitalize font-bold text-slate-700 dark:text-slate-600">
             {productName.slice(0, 28)}
           </h3>
           <p className=" text-sm font-bold text-primary-600">${productPrice}</p>

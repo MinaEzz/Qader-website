@@ -10,14 +10,16 @@ const QuantitySelector = ({ quantity, setQuantity }) => {
     }
   };
   return (
-    <div className="bg-white rounded-lg p-1 w-fit flex items-center gap-2">
+    <div className="bg-white dark:bg-slate-900 rounded-lg p-1 w-fit flex items-center gap-2">
       <button
         className=" bg-primary-600 hover:bg-primary-700 active:bg-primary-800 h-7 w-7 rounded-lg"
         onClick={handleDecrease}
       >
         <FaMinus className="m-auto" fontSize={14} color="white" />
       </button>
-      <span className="text-slate-700 font-medium text-base">{quantity}</span>
+      <span className="text-slate-700 dark:text-slate-600 font-medium text-base">
+        {quantity}
+      </span>
       <button
         className=" bg-primary-600 hover:bg-primary-700 active:bg-primary-800 h-7 w-7 rounded-lg"
         onClick={handleIncrease}

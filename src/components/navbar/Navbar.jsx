@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="bg-white min-h-[70px] py-3 flex items-center justify-center max-lg:flex-col transition-all ease-in-out duration-500 sticky top-0 z-40 shadow-md"
+      className="bg-white dark:bg-slate-950 min-h-[70px] py-3 flex items-center justify-center max-lg:flex-col transition-all ease-in-out duration-500 sticky top-0 z-40 shadow-md"
       aria-label="Main Navigation"
     >
       <div className="container flex justify-between items-center gap-4">

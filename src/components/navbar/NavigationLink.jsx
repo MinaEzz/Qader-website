@@ -4,7 +4,7 @@ const NavigationLink = (probs) => {
   return (
     <NavLink
       to={probs.path}
-      className="capitalize text-slate-700 active:text-slate-900 text-lg font-bold after:w-0 after:h-[2px] after:block after:mt-[1px] after:bg-slate-700 hover:after:w-full hover:after:transition-all hover:after:duration-300 after:duration-300 hover:after:ease-in-out"
+      className="capitalize text-slate-700 dark:text-slate-600 active:text-slate-900 text-lg font-bold after:w-0 after:h-[2px] after:block after:mt-[1px] after:bg-slate-700 dark:after:bg-slate-600 hover:after:w-full hover:after:transition-all hover:after:duration-300 after:duration-300 hover:after:ease-in-out"
     >
       {probs.title}
     </NavLink>

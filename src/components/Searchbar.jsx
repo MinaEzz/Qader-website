@@ -63,7 +63,7 @@ const Searchbar = () => {
   return (
     <div className="relative flex items-center flex-1 border border-primary-600 rounded-xl">
       <IoSearchOutline
-        className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-600 pointer-events-none"
+        className="absolute top-1/2 -translate-y-1/2 left-2  text-neutral-600 dark:text-neutral-500 pointer-events-none"
         fontSize={18}
       />
       <form className="w-full" onSubmit={handleSubmit}>
@@ -73,7 +73,7 @@ const Searchbar = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           value={searchTerm}
           placeholder="Search something..."
-          className="w-full h-10 outline-none text-sm text-neutral-700  placeholder:text-neutral-500 py-2 pl-8 pr-10 rounded-xl placeholder:text-sm"
+          className="w-full h-10 bg-transparent outline-none text-sm text-neutral-700 dark:text-neutral-500  placeholder:text-neutral-500 py-2 pl-8 pr-10 rounded-xl placeholder:text-sm"
         />
       </form>
       <button

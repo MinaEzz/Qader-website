@@ -3,7 +3,7 @@ import { FaPlus } from "react-icons/fa6";
 
 const ProductCard = ({ ...product }) => {
   return (
-    <li className="bg-white shadow-lg hover:shadow-2xl transition-all p-4 w-[250px] rounded-xl flex flex-col gap-4">
+    <li className="bg-white dark:bg-slate-900 shadow-lg hover:shadow-2xl transition-all p-4 w-[250px] rounded-xl flex flex-col gap-4">
       <div className="flex justify-between items-center">
         <b className="bg-slate-600 rounded-xl py-1 px-2 text-white text-sm">
           ${product.price}
@@ -23,7 +23,7 @@ const ProductCard = ({ ...product }) => {
         <h4 className="text-center text-xl capitalize font-medium text-primary-600">
           {`${product?.name.slice(0, 26)}`}
         </h4>
-        <p className="text-center text-sm text-slate-700">
+        <p className="text-center text-sm text-slate-700 dark:text-slate-600">
           {`${product?.description.slice(0, 120)}...`}
         </p>
       </div>

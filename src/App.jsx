@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header, Footer, Navbar } from "./components";
 import {
@@ -16,10 +17,45 @@ import {
 } from "./pages";
 
 const App = () => {
+  const [isDark, setIsDark] = useState(false);
+  // theme vars
+  const userTheme = localStorage.getItem("theme");
+  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  // initial theme check
+  const themeCheck = () => {
+    if (userTheme === "dark" || (!userTheme && systemTheme)) {
+      document.documentElement.classList.add;
+      ("dark");
+      setIsDark(true);
+      return;
+    }
+  };
+  // manual theme switch
+  const themeSwitch = () => {
+    if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setIsDark(false);
+      return;
+    }
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+    setIsDark(true);
+  };
+  useEffect(() => {
+    themeCheck();
+  }, []);
+
   return (
-    <main className="bg-neutral-100 overflow-clip relative">
+    <main className="bg-neutral-100 dark:bg-slate-950 overflow-clip relative">
       <Router>
-        <Header />
+        <Header
+          isDark={isDark}
+          setIsDark={setIsDark}
+          userTheme={userTheme}
+          systemTheme={systemTheme}
+          themeSwitch={themeSwitch}
+        />
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />

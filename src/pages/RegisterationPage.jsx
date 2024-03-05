@@ -9,7 +9,7 @@ const RegisterationPage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className="min-h-[100dvh] pd-y bg-white">
+    <section className="min-h-[100dvh] pd-y bg-white dark:bg-slate-950">
       <div className="container flex justify-between items-center gap-5 max-lg:flex-col">
         <div className="w-full lg:flex-1 h-[500px] bg-red-">
           <img src={formVector} alt="Login Vector" />
@@ -19,7 +19,7 @@ const RegisterationPage = () => {
             sign up
           </h2>
           <RegistForm />
-          <p className="text-slate-700 text-xl text-center capitalize">
+          <p className="text-slate-700 dark:text-slate-600 text-xl text-center capitalize">
             already have an account?
           </p>
           <Button
