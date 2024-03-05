@@ -12,7 +12,7 @@ const LoginPage = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[100dvh] pd-y bg-white">
+    <section className=" min-h-[100dvh] pd-y bg-white">
       <div className="container flex justify-between items-center gap-5 max-lg:flex-col">
         <div className="w-full lg:flex-1 h-[500px] bg-red-">
           <img src={formVector} alt="Login Vector" />

@@ -26,7 +26,8 @@ import ProductFeedback from "./products/ProductFeedback";
 import FeedbackForm from "./form/FeedbackForm";
 import AddJobForm from "./form/AddJobForm";
 import JobAccordionCard from "./jobs/JobAccordionCard";
-import EditProfileForm from "./form/EditProfileForm";
+import EditProfileModal from "./form/EditProfileModal";
+import ProfileInfo from "./profile/ProfileInfo";
 export {
   Header,
   Navbar,
@@ -56,5 +57,6 @@ export {
   FeedbackForm,
   AddJobForm,
   JobAccordionCard,
-  EditProfileForm,
+  EditProfileModal,
+  ProfileInfo,
 };

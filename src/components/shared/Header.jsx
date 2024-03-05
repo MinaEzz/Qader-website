@@ -39,7 +39,7 @@ const Header = () => {
             <Link to="/cart">
               <MdShoppingCart
                 fontSize={20}
-                title="Checkout"
+                title="Cart"
                 className="text-primary-600"
               />
               <div className="absolute top-1/2 -translate-y-full -right-2 text-center bg-neutral-100 rounded-full w-6 h-6">

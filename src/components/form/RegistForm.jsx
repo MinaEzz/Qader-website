@@ -135,6 +135,12 @@ const RegistForm = () => {
       />
       <Input
         type="text"
+        name="address"
+        placeholder="Your Address"
+        onChange={handleChange}
+      />
+      <Input
+        type="text"
         name="username"
         placeholder="Username"
         value={formData.username}

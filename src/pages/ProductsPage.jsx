@@ -6,12 +6,10 @@ import { ProductsContext } from "../context/getProducts";
 
 const ProductsPage = () => {
   const products = useContext(ProductsContext);
-  const params = useParams();
+  const { categoryID, categoryTITLE } = useParams();
   useEffect(() => {
     document.title = `${
-      params.categoryTITLE
-        ? `Products Of ${params.categoryTITLE}`
-        : "Our Products"
+      categoryTITLE ? `Products Of ${categoryTITLE}` : "Our Products"
     }`;
     window.scrollTo(0, 0);
 
@@ -21,16 +19,14 @@ const ProductsPage = () => {
     //   // Fetch all products when no category is specified
     //   fetchAllProducts();
     // }
-  }, [params.categoryTITLE]);
+  }, [categoryID, categoryTITLE]);
   return (
     <section className="min-h-[100dvh] pd-y">
       <OurTitle
-        title={`${
-          params.categoryTITLE ? `${params.categoryTITLE} products` : "products"
-        }`}
+        title={`${categoryTITLE ? `${categoryTITLE} products` : "products"}`}
       />
       <div className="container ">
-        <ul className=" pd-y-s flex gap-8 flex-wrap items-center justify-around">
+        <ul className="pd-y-s flex gap-8 flex-wrap items-center justify-around">
           {products.map((product) => {
             return <ProductCard key={product.id} {...product} />;
           })}

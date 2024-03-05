@@ -10,7 +10,7 @@ const ProductCard = ({ ...product }) => {
         </b>
         <b
           className={`text-sm ${
-            product.available ? "bg-emerald-400" : "bg-red-400"
+            product.available ? "bg-primary-500" : "bg-coral-red-500"
           }  rounded-xl py-1 px-2 text-white`}
         >
           {product.available ? "Available" : "Out of stock"}

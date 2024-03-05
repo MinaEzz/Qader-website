@@ -12,6 +12,7 @@ import {
   JobsPage,
   AddJobPage,
   PageNotFound,
+  SearchPage,
 } from "./pages";
 
 const App = () => {
@@ -22,12 +23,13 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/products" element={<ProductsPage />} />
           <Route
             path="/products/:categoryID/:categoryTITLE"
             element={<ProductsPage />}
           />
-          <Route path="/products/" element={<ProductsPage />} />
           <Route path="/products/:productID" element={<ProductDetailsPage />} />
+          <Route path="/search/:searchTerm" element={<SearchPage />} />
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/login" element={<LoginPage />} />

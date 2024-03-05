@@ -9,20 +9,20 @@ import SpeechRecognition, {
 } from "react-speech-recognition";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 const Searchbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [isRecording, setIsRecording] = useState(false);
   const [error, setError] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
-
+  const navigate = useNavigate();
   const {
     transcript,
     resetTranscript,
     browserSupportsSpeechRecognition,
     isMicrophoneAvailable,
   } = useSpeechRecognition();
-
   const recordingToggler = () => {
     setIsRecording(!isRecording);
   };
@@ -37,7 +37,6 @@ const Searchbar = () => {
     resetTranscript();
     setSearchTerm(transcript);
   };
-
   const buttonHandler = () => {
     if (!browserSupportsSpeechRecognition) {
       setError(true);
@@ -56,12 +55,11 @@ const Searchbar = () => {
     }
     !isRecording ? startListen() : stopListen();
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
+    searchTerm && navigate(`/search/${searchTerm}`);
     setSearchTerm("");
   };
-
   return (
     <div className="relative flex items-center flex-1 border border-primary-600 rounded-xl">
       <IoSearchOutline
@@ -80,7 +78,7 @@ const Searchbar = () => {
       </form>
       <button
         className={`absolute right-3 border-l border-neutral-500 pl-1 ${
-          isRecording ? " text-coral-red" : "text-neutral-500"
+          isRecording ? " text-coral-red-700" : "text-neutral-500"
         }`}
         onClick={buttonHandler}
       >

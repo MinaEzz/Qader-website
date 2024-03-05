@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 const useProductAPI = () => {
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://fakestoreapi.com";
   const [categories, setCategories] = useState([]);
   const [productsByCategory, setProductsByCategory] = useState({});
   const [productDetails, setProductDetails] = useState({});
@@ -16,17 +16,13 @@ const useProductAPI = () => {
       .then((data) => setCategories(data))
       .catch((error) => console.error("Error fetching categories:", error))
       .finally(() => setLoading(false));
-
     // Fetch products by category
     fetchProductsByCategory();
-
     // Fetch product details
     fetchProductDetails();
-
     // Fetch all products
     fetchAllProducts();
   }, []); // Dependency array ensures these fetches run only once on component mount
-
   const fetchProductsByCategory = async (categoryId) => {
     try {
       const response = await fetch(`/api/products/${categoryId}`);
@@ -42,7 +38,6 @@ const useProductAPI = () => {
       );
     }
   };
-
   const fetchProductDetails = async (productId) => {
     try {
       const response = await fetch(`/api/products/${productId}`);
@@ -58,7 +53,6 @@ const useProductAPI = () => {
       );
     }
   };
-
   const fetchAllProducts = async () => {
     try {
       const response = await fetch(`${BASE_URL}/products`);
@@ -68,7 +62,6 @@ const useProductAPI = () => {
       console.error("Error fetching all products:", error);
     }
   };
-
   return {
     categories,
     productsByCategory,

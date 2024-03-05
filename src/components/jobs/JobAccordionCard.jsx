@@ -18,7 +18,7 @@ const JobAccordionCard = ({ job }) => {
           {job.title}
         </h3>
         <svg
-          className={`w-6 h-6 ${
+          className={`w-6 h-6 text-slate-700 ${
             isOpen
               ? "transform rotate-180 transition-all ease-in-out duration-300"
               : "transition-all ease-in-out duration-300"
@@ -44,7 +44,7 @@ const JobAccordionCard = ({ job }) => {
         }`}
       >
         <div className="w-full flex-1 h-[200px]">
-          <img src={jobVector} alt="" />
+          <img src={jobVector} alt={job.title} />
         </div>
         <div className="w-full flex-1 flex flex-col gap-4 justify-between">
           <div>
