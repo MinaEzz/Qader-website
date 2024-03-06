@@ -30,7 +30,7 @@ const Footer = () => {
               return (
                 <li key={media.title}>
                   <a
-                    className="flex justify-center items-center w-10 h-10 bg-neutral-100 rounded-full"
+                    className="flex justify-center items-center w-10 h-10 bg-neutral-100 dark:bg-slate-900 rounded-full"
                     href={media.ref}
                   >
                     {media.icon}

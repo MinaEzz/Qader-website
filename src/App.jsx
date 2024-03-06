@@ -14,6 +14,7 @@ import {
   AddJobPage,
   PageNotFound,
   SearchPage,
+  CartPage,
 } from "./pages";
 
 const App = () => {
@@ -24,8 +25,7 @@ const App = () => {
   // initial theme check
   const themeCheck = () => {
     if (userTheme === "dark" || (!userTheme && systemTheme)) {
-      document.documentElement.classList.add;
-      ("dark");
+      document.documentElement.classList.add("dark");
       setIsDark(true);
       return;
     }
@@ -73,6 +73,7 @@ const App = () => {
           <Route path="/jobs" element={<JobsPage />} />
           <Route path="/add-job" element={<AddJobPage />} />
           <Route path="/profile" element={<UserProfilePage />} />
+          <Route path="/cart" element={<CartPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

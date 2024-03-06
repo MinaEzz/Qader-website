@@ -10,6 +10,7 @@ import JobsPage from "./JobsPage";
 import AddJobPage from "./AddJobPage";
 import PageNotFound from "./PageNotFound";
 import SearchPage from "./SearchPage";
+import CartPage from "./CartPage";
 export {
   HomePage,
   ProductsPage,
@@ -23,4 +24,5 @@ export {
   AddJobPage,
   PageNotFound,
   SearchPage,
+  CartPage,
 };

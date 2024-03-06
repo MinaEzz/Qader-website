@@ -31,6 +31,7 @@ const Searchbar = () => {
       continuous: true,
       language: "en-US",
     });
+    resetTranscript();
   };
   const stopListen = () => {
     SpeechRecognition.stopListening();
