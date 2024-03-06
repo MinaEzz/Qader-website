@@ -9,15 +9,18 @@ const EditProfileModal = ({ open, close }) => {
     <section className="w-full h-full " onClick={close}>
       <div className="layer flex justify-center items-center z-40">
         <div
-          className="bg-white h-full w-10/12 flex flex-col p-2 gap-8 fixed top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 overflow-scroll lg:justify-center"
+          className="bg-white dark:bg-slate-900 h-full w-10/12 flex flex-col p-2 gap-8 fixed top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 overflow-scroll lg:justify-center"
           onClick={(e) => e.stopPropagation()}
         >
-          <h3 className="text-slate-700 text-3xl  capitalize font-medium">
+          <h3 className="text-slate-700 dark:text-slate-600 text-3xl  capitalize font-medium">
             edit profile
           </h3>
           <form className="flex flex-col gap-4">
             <div className="flex flex-col items gap-1">
-              <label className="text-lg capitalize" htmlFor="profileImage">
+              <label
+                className="text-lg capitalize text-neutral-600"
+                htmlFor="profileImage"
+              >
                 profile image:
               </label>
               <input type="file" name="profileImage" id="profileImage" />
@@ -244,6 +247,7 @@ const EditProfileModal = ({ open, close }) => {
                   })}
                 </select>
               </div>
+
               <div className="flex w-full flex-1 flex-col items gap-1">
                 <Input
                   type="text"

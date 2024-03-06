@@ -17,7 +17,6 @@ import {
 } from "./pages";
 
 const App = () => {
-  const [isDark, setIsDark] = useState(false);
   // theme vars
   const userTheme = localStorage.getItem("theme");
   const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -26,10 +25,11 @@ const App = () => {
     if (userTheme === "dark" || (!userTheme && systemTheme)) {
       document.documentElement.classList.add;
       ("dark");
-      setIsDark(true);
       return;
     }
   };
+  const [isDark, setIsDark] = useState(systemTheme);
+
   // manual theme switch
   const themeSwitch = () => {
     if (document.documentElement.classList.contains("dark")) {

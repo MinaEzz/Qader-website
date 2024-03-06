@@ -11,7 +11,7 @@ const UserProfilePage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className="min-h-[100dvh] pd-y bg-white">
+    <section className="min-h-[100dvh] pd-y bg-white dark:bg-slate-950">
       <div className="container flex justify-between gap-6 max-lg:flex-col">
         <section className="lg:w-1/5  max-md:w-full w-1/2 m-auto h-[340px] rounded-full">
           <img

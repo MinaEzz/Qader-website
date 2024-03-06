@@ -170,7 +170,7 @@ const RegistForm = () => {
       {/* basic info */}
       <div className="flex flex-col gap-2">
         <select
-          className="w-full h-10 p-2 outline-none rounded-xl border border-primary-600 capitalize text-base text-neutral-700 font-medium bg-transparent"
+          className="w-full h-10 p-2 outline-none rounded-xl border border-primary-600 capitalize text-base text-neutral-700 dark:text-neutral-500 font-medium bg-transparent"
           name="profileType"
           id="profileType"
           required
@@ -178,7 +178,7 @@ const RegistForm = () => {
           onChange={handleProfileTypeChange}
         >
           <option
-            className="capitalize text-base font-medium text-neutral-500 "
+            className="capitalize text-base font-medium text-neutral-500 dark:text-neutral-600 "
             value="select profile type"
             disabled
           >
@@ -201,7 +201,7 @@ const RegistForm = () => {
           <select
             name="typeOfDisability"
             id="typeOfDisability"
-            className="w-full h-10 p-2 outline-none rounded-xl border border-primary-600 capitalize text-base text-neutral-700 font-medium bg-transparent"
+            className="w-full h-10 p-2 outline-none rounded-xl border border-primary-600 capitalize text-base text-neutral-700 dark:text-neutral-500 font-medium bg-transparent"
             defaultValue="select disability type"
             onChange={(e) =>
               setFormData({ ...formData, disabilityType: e.target.value })

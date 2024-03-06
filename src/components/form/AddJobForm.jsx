@@ -1,7 +1,7 @@
 import Input from "../shared/Input";
 const AddJobForm = () => {
   return (
-    <div className="bg-white rounded-xl shadow-md p-4 flex flex-col gap-4">
+    <div className="bg-white dark:bg-slate-900 rounded-xl shadow-md p-4 flex flex-col gap-4">
       <h2 className="text-center capitalize text-3xl font-semibold text-primary-600">
         add a job
       </h2>
@@ -17,7 +17,7 @@ const AddJobForm = () => {
           id="jobDescription"
           rows="4"
           placeholder="Job Description..."
-          className="w-full h-10 bg-transparent flex-1 outline-none text-base text-neutral-700 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
+          className="w-full h-10 bg-transparent flex-1 outline-none text-base text-neutral-700 dark:text-neutral-500 font-medium placeholder:text-neutral-500 p-2 placeholder:text-base placeholder:font-medium border border-primary-600 rounded-xl"
         />
         <button
           type="submit"

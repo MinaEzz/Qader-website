@@ -68,7 +68,7 @@ const ForgetPasswordModal = ({ open, close }) => {
                 submit
               </button>
             </div>
-            <small className="text-neutral-700 dark:text-neutral-600 ">
+            <small className="text-neutral-700 dark:text-neutral-600">
               you will receive an email with a link that direct you to reset
               your password in a few minutes
             </small>
