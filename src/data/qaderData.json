@@ -101,9 +101,7 @@
       "confirmPassword": "0000",
       "gender": "male",
       "dateOfBirth": "2001-01-19",
-      "profileType": "buyer",
       "typeOfDisability": "Recovery from Surgery or Injury",
-      "companyName": "",
       "id": 1
     },
     {
@@ -115,9 +113,7 @@
       "confirmPassword": "123",
       "gender": "female",
       "dateOfBirth": "2024-02-03",
-      "profileType": "employer",
       "typeOfDisability": "",
-      "companyName": "velva",
       "id": 2
     },
     {
@@ -130,7 +126,6 @@
       "gender": "other",
       "dateOfBirth": "2014-01-15",
       "age": 10,
-      "profileType": "employer",
       "typeOfDisability": "",
       "companyName": "testos",
       "id": 3

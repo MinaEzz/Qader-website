@@ -23,7 +23,7 @@ const EditProfileModal = ({ open, close }) => {
               >
                 profile image:
               </label>
-              <input type="file" name="profileImage" id="profileImage" />
+              <input className=" cursor-pointer text-slate-600 dark:text-white" type="file" name="profileImage" id="profileImage" />
             </div>
             <section className="flex justify-between gap-4 items-center max-lg:flex-col">
               <div className="flex w-full flex-1 flex-col items gap-1">
@@ -125,12 +125,13 @@ const EditProfileModal = ({ open, close }) => {
               {/* birthdate */}
             </section>
             {/* ./ address & date of birth */}
-            <div className="w-full flex gap-1 max-md:flex-col md:items-center md:gap-3">
+            <section className="flex justify-between gap-4 items-center max-lg:flex-col">
+            <div className="w-full flex flex-1 gap-1 max-md:flex-col md:items-center md:gap-3">
               <label
                 className="text-lg capitalize text-neutral-600"
                 htmlFor="gender"
               >
-                gender
+                gender:
               </label>
               <div className="flex items-center gap-1">
                 <input
@@ -185,43 +186,12 @@ const EditProfileModal = ({ open, close }) => {
               </div>
             </div>
             {/* gender */}
-
-            <section className="flex justify-between gap-4 items-center max-lg:flex-col">
-              <div className="flex w-full flex-1 flex-col items gap-1">
-                <select
-                  className="w-full h-10 p-2 outline-none rounded-xl border border-primary-600 capitalize text-base text-neutral-700 font-medium"
-                  name="profileType"
-                  id="profileType"
-                  required
-                  defaultValue="select profile type"
-                  // onChange={handleProfileTypeChange}
-                >
-                  <option
-                    className="capitalize text-base font-medium text-neutral-500 "
-                    value="select profile type"
-                    disabled
-                  >
-                    select profile type
-                  </option>
-                  <option
-                    className="capitalize text-base font-medium text-slate-700"
-                    value="buyer"
-                  >
-                    buyer
-                  </option>
-                  <option
-                    className="capitalize text-base font-medium text-slate-700"
-                    value="employer"
-                  >
-                    employer
-                  </option>
-                </select>
-              </div>
-              <div className="flex w-full flex-1 flex-col items gap-1">
-                <select
+            <div className="flex w-full flex-1 flex-col items gap-1">
+              <label className="text-lg capitalize text-neutral-600" htmlFor="typeOfDisability">type of disability:</label>
+              <select
                   name="typeOfDisability"
                   id="typeOfDisability"
-                  className="w-full h-10 p-2 outline-none rounded-xl border border-primary-600 capitalize text-base text-neutral-700 font-medium"
+                  className="w-full h-10 p-2 outline-none rounded-xl border border-primary-600 capitalize text-base text-neutral-700 dark:text-neutral-500 font-medium bg-transparent"
                   defaultValue="select disability type"
                   // onChange={(e) =>
                   //   setFormData({ ...formData, disabilityType: e.target.value })
@@ -246,20 +216,8 @@ const EditProfileModal = ({ open, close }) => {
                     );
                   })}
                 </select>
-              </div>
-
-              <div className="flex w-full flex-1 flex-col items gap-1">
-                <Input
-                  type="text"
-                  name="companyName"
-                  placeholder="Company Name"
-                  value={""}
-                  // onChange={(e) =>
-                  //   setFormData({ ...formData, companyName: e.target.value })}
-                />
-              </div>
+            </div>
             </section>
-
             <div className="flex max-lg:flex-col justify-center items-center gap-4">
               <button
                 className="w-[160px] h-10 rounded-xl bg-primary-600 hover:bg-primary-700 active:bg-primary-800 transition-all text-base capitalize font-medium text-white"

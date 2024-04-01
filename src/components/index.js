@@ -28,6 +28,7 @@ import AddJobForm from "./form/AddJobForm";
 import JobAccordionCard from "./jobs/JobAccordionCard";
 import EditProfileModal from "./form/EditProfileModal";
 import ProfileInfo from "./profile/ProfileInfo";
+import Loader from "./shared/Loader";
 export {
   Header,
   Navbar,
@@ -59,4 +60,5 @@ export {
   JobAccordionCard,
   EditProfileModal,
   ProfileInfo,
+  Loader,
 };

@@ -16,9 +16,7 @@ const RegistForm = () => {
     gender: "",
     dateOfBirth: "",
     age: 0,
-    profileType: "",
-    typeOfDisability: "", // Only applicable for profileType === 'buyer'
-    companyName: "", // Only applicable for profileType === 'employer'
+    typeOfDisability: ""
   });
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -56,16 +54,6 @@ const RegistForm = () => {
       ...prevData,
       dateOfBirth: newDateOfBirth,
       age: calculateAge(newDateOfBirth),
-    }));
-  };
-  // Handle profileType change
-  const handleProfileTypeChange = (e) => {
-    const newProfileType = e.target.value;
-    setFormData((prevData) => ({
-      ...prevData,
-      profileType: newProfileType,
-      disabilityType: newProfileType === "buyer" ? "" : prevData.disabilityType,
-      companyName: newProfileType === "employer" ? "" : prevData.companyName,
     }));
   };
   const handleSubmit = async (e) => {
@@ -117,6 +105,7 @@ const RegistForm = () => {
       className="flex flex-col gap-4"
       onSubmit={handleSubmit}
       method="POST"
+      action="/"
       aria-labelledby="Register Form"
     >
       <Input
@@ -167,38 +156,7 @@ const RegistForm = () => {
         value={formData.confirmPassword}
         onChange={handleChange}
       />
-      {/* basic info */}
-      <div className="flex flex-col gap-2">
-        <select
-          className="w-full h-10 p-2 outline-none rounded-xl border border-primary-600 capitalize text-base text-neutral-700 dark:text-neutral-500 font-medium bg-transparent"
-          name="profileType"
-          id="profileType"
-          required
-          defaultValue="select profile type"
-          onChange={handleProfileTypeChange}
-        >
-          <option
-            className="capitalize text-base font-medium text-neutral-500 dark:text-neutral-600 "
-            value="select profile type"
-            disabled
-          >
-            select profile type
-          </option>
-          <option
-            className="capitalize text-base font-medium text-slate-700"
-            value="buyer"
-          >
-            buyer
-          </option>
-          <option
-            className="capitalize text-base font-medium text-slate-700"
-            value="employer"
-          >
-            employer
-          </option>
-        </select>
-        {formData.profileType === "buyer" && (
-          <select
+      <select
             name="typeOfDisability"
             id="typeOfDisability"
             className="w-full h-10 p-2 outline-none rounded-xl border border-primary-600 capitalize text-base text-neutral-700 dark:text-neutral-500 font-medium bg-transparent"
@@ -225,21 +183,8 @@ const RegistForm = () => {
                 </option>
               );
             })}
-          </select>
-        )}
-        {formData.profileType === "employer" && (
-          <Input
-            type="text"
-            name="companyName"
-            placeholder="Company Name"
-            value={formData.companyName}
-            onChange={(e) =>
-              setFormData({ ...formData, companyName: e.target.value })
-            }
-          />
-        )}
-      </div>
-      {/* ptofile-type */}
+      </select>
+      {/* basic info */}
       <div className="w-full flex gap-1 max-md:flex-col md:items-center md:gap-3">
         <label className="text-lg capitalize text-neutral-600" htmlFor="gender">
           select your gender

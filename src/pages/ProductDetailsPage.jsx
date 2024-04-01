@@ -1,7 +1,7 @@
 import { useEffect, useContext, useState } from "react";
 import { ProductsContext } from "../context/getProducts";
 import { useParams } from "react-router-dom";
-import { QuantitySelector, ProductFeedback, ProductRates } from "../components";
+import { QuantitySelector, ProductFeedback, ProductRates, Loader } from "../components";
 import { FaCartArrowDown } from "react-icons/fa6";
 
 const ProductDetailsPage = () => {
@@ -10,12 +10,15 @@ const ProductDetailsPage = () => {
   const [quantity, setQuantity] = useState(1);
   const params = useParams();
   const matchedProduct = products.find(
-    (p) => p.id === parseInt(params.productID)
+    (p) => p.id === Number(params.productID)
   );
+
   useEffect(() => {
     document.title = matchedProduct.name;
     window.scrollTo(0, 0);
   }, [matchedProduct]);
+
+  if(!matchedProduct) return (<Loader />)
 
   return (
     <section className="min-h-[100dvh] pd-y">

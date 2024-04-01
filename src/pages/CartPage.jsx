@@ -1,5 +1,13 @@
+import { Loader } from "../components";
+
 const CartPage = () => {
-  return <div>CartPage</div>;
+  return (
+    <section className="min-h-[100dvh] pd-y">
+      <div className="container">
+        <Loader />
+      </div>
+    </section>
+  );
 };
 
 export default CartPage;

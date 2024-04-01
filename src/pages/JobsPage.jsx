@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { JobAccordionCard, Button } from "../components";
+import { JobAccordionCard } from "../components";
 import { JOBS } from "../constants";
 import { jobsVector } from "../assets/images";
 
@@ -15,16 +15,6 @@ const JobsPage = () => {
       </h2>
       <div className="container mt-8 flex items-center justify-between max-lg:flex-col gap-4">
         <section className="w-full flex flex-1 flex-col gap-4">
-          <Button
-            label={"add job"}
-            url={"/add-job"}
-            width={"w-32"}
-            height={"h-10"}
-            backgroundColor="bg-slate-700"
-            hoverBgColor="hover:bg-slate-800"
-            activeBgColor="active:bg-slate-900"
-            fontSize={"text-base"}
-          />
           {JOBS.map((job) => {
             return <JobAccordionCard key={job.id} job={job} />;
           })}

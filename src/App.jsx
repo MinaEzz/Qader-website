@@ -11,7 +11,6 @@ import {
   ProductDetailsPage,
   UserProfilePage,
   JobsPage,
-  AddJobPage,
   PageNotFound,
   SearchPage,
   CartPage,
@@ -36,11 +35,11 @@ const App = () => {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
       setIsDark(false);
-      return;
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setIsDark(true);
     }
-    document.documentElement.classList.add("dark");
-    localStorage.setItem("theme", "dark");
-    setIsDark(true);
   };
   useEffect(() => {
     themeCheck();
@@ -71,7 +70,6 @@ const App = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/regist" element={<RegisterationPage />} />
           <Route path="/jobs" element={<JobsPage />} />
-          <Route path="/add-job" element={<AddJobPage />} />
           <Route path="/profile" element={<UserProfilePage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="*" element={<PageNotFound />} />
