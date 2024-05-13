@@ -3,7 +3,7 @@ import { RegistForm } from "../components";
 import { Button } from "../components";
 import { useEffect } from "react";
 
-const RegisterationPage = () => {
+const RegisterationPage = ({ setAuthenticationMood }) => {
   useEffect(() => {
     document.title = "Sign Up";
     window.scrollTo(0, 0);
@@ -24,10 +24,10 @@ const RegisterationPage = () => {
           </p>
           <Button
             label="login"
-            url="/login"
             backgroundColor="bg-slate-700"
             hoverBgColor="hover:bg-slate-800"
             activeBgColor="active:bg-slate-900"
+            onClick={() => setAuthenticationMood("login")}
           />
         </div>
       </div>

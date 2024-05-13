@@ -20,8 +20,8 @@ export const NAVLINKS = [
     path: "/jobs",
   },
   {
-    title: "login/Regist",
-    path: "/login",
+    title: "login/Register",
+    path: "/authentication",
   },
 ];
 // Services Constants

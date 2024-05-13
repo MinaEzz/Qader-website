@@ -6,8 +6,7 @@ import {
   ProductsPage,
   AboutPage,
   ContactUsPage,
-  LoginPage,
-  RegisterationPage,
+  AuthenticationPage,
   ProductDetailsPage,
   UserProfilePage,
   JobsPage,
@@ -67,8 +66,7 @@ const App = () => {
           <Route path="/search/:searchTerm" element={<SearchPage />} />
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/regist" element={<RegisterationPage />} />
+          <Route path="/authentication" element={<AuthenticationPage />} />
           <Route path="/jobs" element={<JobsPage />} />
           <Route path="/profile" element={<UserProfilePage />} />
           <Route path="/cart" element={<CartPage />} />

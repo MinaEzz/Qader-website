@@ -5,6 +5,7 @@ import ContactUsPage from "./ContactUsPage";
 import UserProfilePage from "./UserProfilePage";
 import LoginPage from "./LoginPage";
 import RegisterationPage from "./RegisterationPage";
+import AuthenticationPage from "./AuthenticationPage";
 import ProductDetailsPage from "./ProductDetailsPage";
 import JobsPage from "./JobsPage";
 import AddJobPage from "./AddJobPage";
@@ -25,4 +26,5 @@ export {
   PageNotFound,
   SearchPage,
   CartPage,
+  AuthenticationPage,
 };

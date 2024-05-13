@@ -1,31 +1,94 @@
-import { useEffect, useContext, useState } from "react";
-import { ProductsContext } from "../context/getProducts";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { QuantitySelector, ProductFeedback, ProductRates, Loader } from "../components";
+import {
+  QuantitySelector,
+  ProductFeedback,
+  ProductRates,
+  Loader,
+} from "../components";
 import { FaCartArrowDown } from "react-icons/fa6";
 
+const DUMMY_PRODUCTS = [
+  {
+    id: 100,
+    name: "product_1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum atque qui numquam minus aliquam fugiat ad soluta adipisci ducimus harum maiores laborum necessitatibus officia, impedit nesciunt officiis quo exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    imageUrl:
+      "https://storage-dmes.comcash.com/images/products/c71aa8798af2cfc53e8ea99f60844733.jpg",
+    price: 1000,
+    available: false,
+  },
+  {
+    id: 101,
+    name: "product_1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum atque qui numquam minus aliquam fugiat ad soluta adipisci ducimus harum maiores laborum necessitatibus officia, impedit nesciunt officiis quo exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem atque molestias sit itaque! Facere ut repellendus, molestias ad porro aliquam at dolor vitae laborum, neque dolore. Animi ea sapiente in?",
+    imageUrl:
+      "https://storage-dmes.comcash.com/images/products/c71aa8798af2cfc53e8ea99f60844733.jpg",
+    price: 1000,
+    available: false,
+  },
+  {
+    id: 102,
+    name: "product_1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum atque qui numquam minus aliquam fugiat ad soluta adipisci ducimus harum maiores laborum necessitatibus officia, impedit nesciunt officiis quo exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    imageUrl:
+      "https://storage-dmes.comcash.com/images/products/c71aa8798af2cfc53e8ea99f60844733.jpg",
+    price: 1000,
+    available: false,
+  },
+  {
+    id: 103,
+    name: "product_1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum atque qui numquam minus aliquam fugiat ad soluta adipisci ducimus harum maiores laborum necessitatibus officia, impedit nesciunt officiis quo exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem atque molestias sit itaque! Facere ut repellendus, molestias ad porro aliquam at dolor vitae laborum, neque dolore. Animi ea sapiente in?",
+    imageUrl:
+      "https://storage-dmes.comcash.com/images/products/c71aa8798af2cfc53e8ea99f60844733.jpg",
+    price: 1000,
+    available: false,
+  },
+  {
+    id: 104,
+    name: "product_1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum atque qui numquam minus aliquam fugiat ad soluta adipisci ducimus harum maiores laborum necessitatibus officia, impedit nesciunt officiis quo exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    imageUrl:
+      "https://storage-dmes.comcash.com/images/products/c71aa8798af2cfc53e8ea99f60844733.jpg",
+    price: 1000,
+    available: false,
+  },
+  {
+    id: 105,
+    name: "product_1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum atque qui numquam minus aliquam fugiat ad soluta adipisci ducimus harum maiores laborum necessitatibus officia, impedit nesciunt officiis quo exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem atque molestias sit itaque! Facere ut repellendus, molestias ad porro aliquam at dolor vitae laborum, neque dolore. Animi ea sapiente in?",
+    imageUrl:
+      "https://storage-dmes.comcash.com/images/products/c71aa8798af2cfc53e8ea99f60844733.jpg",
+    price: 1000,
+    available: false,
+  },
+];
+
 const ProductDetailsPage = () => {
-  // ht3ml fetch ll api ely bygeb product wa7d w tb3tlo mn el params el product id
-  const products = useContext(ProductsContext);
   const [quantity, setQuantity] = useState(1);
-  const params = useParams();
-  const matchedProduct = products.find(
-    (p) => p.id === Number(params.productID)
-  );
+  const { productID } = useParams();
+  const matchedProduct = DUMMY_PRODUCTS.find((p) => p.id === Number(productID));
 
   useEffect(() => {
     document.title = matchedProduct.name;
     window.scrollTo(0, 0);
   }, [matchedProduct]);
 
-  if(!matchedProduct) return (<Loader />)
+  if (!matchedProduct) return <Loader />;
 
   return (
     <section className="min-h-[100dvh] pd-y">
       <div className="container flex flex-col gap-4">
         <div className="w-full flex justify-between max-lg:flex-col gap-4">
           <div className="flex-1 w-full h-[400px]">
-            <img src={matchedProduct.image} alt={matchedProduct.name} />
+            <img src={matchedProduct.imageUrl} alt={matchedProduct.name} />
           </div>
           <div className="w-full flex flex-1 flex-col gap-4">
             <h3 className="text-primary-600 text-3xl font-bold capitalize">

@@ -3,7 +3,7 @@ import { formVector } from "../assets/images";
 import { LoginForm, ForgetPasswordModal } from "../components";
 import { Button } from "../components";
 
-const LoginPage = () => {
+const LoginPage = ({ setAuthenticationMood }) => {
   const [openModal, setOpenModal] = useState(false);
   const closeModal = () => setOpenModal(false);
   useEffect(() => {
@@ -27,10 +27,10 @@ const LoginPage = () => {
           </p>
           <Button
             label="sign up"
-            url="/regist"
             backgroundColor="bg-slate-700"
             hoverBgColor="hover:bg-slate-800"
             activeBgColor="active:bg-slate-900"
+            onClick={() => setAuthenticationMood("register")}
           />
         </div>
       </div>

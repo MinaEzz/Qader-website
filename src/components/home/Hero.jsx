@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 import { backgroundSlides } from "../../assets/images/background";
 import Button from "../shared/Button";
 import { FaArrowRight } from "react-icons/fa";
@@ -20,17 +19,6 @@ const Hero = () => {
     backgroundImage: `url(${backgroundSlides[slide].url})`,
   };
 
-  const location = useLocation();
-  useEffect(() => {
-    // Use the location.hash to get the ID from the URL
-    const sectionId = location.hash.substring(1);
-    const sectionElement = document.getElementById(sectionId);
-
-    if (sectionElement) {
-      // Scroll to the section if it exists
-      sectionElement.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [location]);
   return (
     <section
       className="relative w-full min-h-[100dvh] transition-all ease-in-out duration-700 bg-cover bg-center bg-no-repeat"
@@ -48,7 +36,7 @@ const Hero = () => {
         <Button
           label="shop now"
           icon={<FaArrowRight size={18} />}
-          url="/#shop-now"
+          href="#shop-now"
           width="w-48"
         />
       </div>

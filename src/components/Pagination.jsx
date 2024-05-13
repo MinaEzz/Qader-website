@@ -2,18 +2,19 @@ import { useState } from "react";
 import ResponsivePagination from "react-responsive-pagination";
 import "react-responsive-pagination/themes/classic.css";
 
-const Pagination = () => {
-  const [currentPage, setCurrentPage] = useState(8);
-  const totalPages = 20;
-  //   function handlePageChange(page) {
-  // parameter { totalPages, fetchProductsByPage}
-  //     setCurrentPage(page);
-  //     fetchMoviesByPage(page);
-  //     window.scroll({
-  //       top: window.innerHeight,
-  //       behavior: "smooth",
-  //     });
-  //   }
+const Pagination = ({ totalPages = 10, fetchProductsByPage }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  // const totalPages = 20;
+
+  // function handlePageChange(page) {
+  //   setCurrentPage(page);
+  //   fetchProductsByPage(page);
+  //   window.scroll({
+  //     top: window.innerHeight,
+  //     behavior: "smooth",
+  //   });
+  // }
+
   return (
     <ResponsivePagination
       current={currentPage}

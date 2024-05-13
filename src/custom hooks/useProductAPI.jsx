@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 const useProductAPI = () => {
-  const BASE_URL = "https://fakestoreapi.com";
+  const BASE_URL = "";
   const [categories, setCategories] = useState([]);
   const [productsByCategory, setProductsByCategory] = useState({});
   const [productDetails, setProductDetails] = useState({});
