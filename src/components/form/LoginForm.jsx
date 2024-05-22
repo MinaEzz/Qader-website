@@ -5,7 +5,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const LoginForm = ({ setOpenModal }) => {
-  const BASE_URL = "http://localhost:5000";
   const [loginData, setLoginData] = useState({
     identifier: "", // This can be username, email, or phone number
     password: "",
@@ -17,38 +16,7 @@ const LoginForm = ({ setOpenModal }) => {
       [name]: value,
     });
   };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch(`${BASE_URL}/users`, { method: "GET" });
-      if (!response.ok) {
-        console.error("Failed to fetch user data");
-        return;
-      }
-      const userData = await response.json();
-      const user = userData.find(
-        (u) =>
-          u.username === loginData.identifier ||
-          u.email === loginData.identifier ||
-          u.phoneNumber === loginData.identifier
-      );
-      if (!user || user.password !== loginData.password) {
-        console.error("Invalid credentials");
-        toast.error("Invalid credentials", {
-          theme: "colored",
-        });
-        return;
-      }
-      console.log("Login successful");
-      toast.error("Login successful", {
-        theme: "colored",
-      });
-
-      // Optionally: Redirect to the user's dashboard or perform additional actions
-    } catch (error) {
-      console.error("Error during login:", error);
-    }
-  };
+  const handleSubmit = async (e) => {};
 
   return (
     <form

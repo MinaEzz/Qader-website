@@ -22,7 +22,7 @@ const LoginPage = ({ setAuthenticationMood }) => {
             login
           </h2>
           <LoginForm setOpenModal={setOpenModal} />
-          <p className="text-slate-700 dark:text-slate-600 text-xl text-center capitalize">
+          <p className="text-slate-700 dark:text-slate-400 text-xl text-center capitalize">
             don't have an account?
           </p>
           <Button

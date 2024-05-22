@@ -5,7 +5,7 @@ const ServiceCard = ({ title, icon }) => {
       key={title}
     >
       <i className="text-neutral-600 dark:text-neutral-500">{icon}</i>
-      <p className="capitalize text-slate-700 dark:text-slate-600 font-medium text-xl">
+      <p className="capitalize text-slate-700 dark:text-slate-400 font-medium text-xl">
         {title}
       </p>
     </div>

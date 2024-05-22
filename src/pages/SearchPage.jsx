@@ -12,7 +12,7 @@ const SearchPage = () => {
   }, [searchTerm]);
   return (
     <section className="min-h-[100dvh] pd-y-s">
-      <h2 className="text-4xl text-slate-700 dark:text-slate-600 text-center">
+      <h2 className="text-4xl text-slate-700 dark:text-slate-400 text-center">
         Search result for:{" "}
         <span className="text-primary-600 font-medium">{searchTerm}</span>
       </h2>

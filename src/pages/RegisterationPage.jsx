@@ -19,7 +19,7 @@ const RegisterationPage = ({ setAuthenticationMood }) => {
             sign up
           </h2>
           <RegistForm />
-          <p className="text-slate-700 dark:text-slate-600 text-xl text-center capitalize">
+          <p className="text-slate-700 dark:text-slate-400 text-xl text-center capitalize">
             already have an account?
           </p>
           <Button

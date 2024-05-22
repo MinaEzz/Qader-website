@@ -218,7 +218,7 @@ export const FOR_USERS = [
     url: "/profile",
   },
 ];
-// regit form constants
+// regist form constants
 export const TYPESOFDISABILITY = [
   "Mobility Impairments",
   "Chronic Illnesses",
